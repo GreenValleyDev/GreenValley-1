@@ -1,0 +1,379 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	<link href="css.css" rel="stylesheet" type="text/css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap"
+		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+</head>
+
+<body>
+	<div id="actionmenu">
+		<div class="menu">
+			<!-- <a id="home">Home</a> -->
+			<a id="search" tabindex="0">Pesquisar</a>
+			<a id="arrest" tabindex="0">Prender</a>
+			<a id="fine" tabindex="0">Multar</a>
+			<!-- <a id="plate">Placa</a>  -->
+			<div id="logo">
+			</div>
+		</div>
+
+		<div id="homes">
+			a
+		</div>
+
+		<div id="searchs">
+			<div id="search-result">
+				<input class="user" id="user_id" maxlenght="9" spellcheck="false" value="" placeholder="Passaporte">
+				<input class="user-id date-form" id="data-war" maxlenght="9" spellcheck="false" value=""
+					placeholder="DATA">
+				<div class="search-itens">
+					<div class="info"></div>
+				</div>
+			</div>
+			<div id="info-result"></div>
+		</div>
+
+		<div id="arrests">
+			<div id="text3">
+				<h2>Efetuar prisão do cidadão</h2>
+			</div>
+			<input class="user2" id="user-arre" onkeypress='validate(event)' maxlenght="9" spellcheck="false" value=""
+				placeholder="Passaporte">
+			<input class="user-id4 date-form" id="data-arre" maxlenght="9" spellcheck="false" value=""
+				placeholder="DATA">
+			<input class="information" id="info-arre" maxlenght="9" spellcheck="false" value="" placeholder="">
+			<div id="pass2">
+				<h3>Passaporte do cidadão</h3>
+			</div>
+			<div id="text5">
+				<h2>Codigo Penal</h2>
+			</div>
+			<div id="icon-date2"></div>
+			<div id="linha-1"></div>
+			<div id="scroll-container">
+				<form class="checkbox-1" action="">
+					<input id="checkbox1" type="checkbox" name="valor1" id="preco" value="200">
+					<label class="aaa" for="checkbox1">Homocidio Doloso Qualificado. - 200 Meses</label> <br>
+
+					<input id="checkbox43" type="checkbox" name="valor43" id="preco" value="150">
+					<label class="aaa" for="checkbox43">Homocidio Doloso. - 150 Meses</label> <br>
+
+					<input id="checkbox44" type="checkbox" name="valor44" id="preco" value="100">
+					<label class="aaa" for="checkbox44">Tentativa de Homocidio. - 100 Meses</label> <br>
+
+					<input id="checkbox45" type="checkbox" name="valor45" id="preco" value="30">
+					<label class="aaa" for="checkbox45">Homocidio Cupulso. - 30 Meses</label> <br>
+
+					<input id="checkbox46" type="checkbox" name="valor46" id="preco" value="30">
+					<label class="aaa" for="checkbox46">Homocidio Cupulso no Transito. - 30 Meses</label> <br>
+
+					<input id="checkbox47" type="checkbox" name="valor47" id="preco" value="20">
+					<label class="aaa" for="checkbox47">Roubo. - 20 Meses</label> <br>
+
+					<input id="checkbox48" type="checkbox" name="valor48" id="preco" value="45">
+					<label class="aaa" for="checkbox48">Roubo a Banco. - 45 Meses</label> <br>
+
+					<input id="checkbox49" type="checkbox" name="valor49" id="preco" value="100">
+					<label class="aaa" for="checkbox49">Roubo a Loja. - 100 Meses</label> <br>
+
+					<input id="checkbox50" type="checkbox" name="valor50" id="preco" value="20">
+					<label class="aaa" for="checkbox50">Furto a Caixa Eletronico. - 20 Meses</label> <br>
+
+					<input id="checkbox51" type="checkbox" name="valor51" id="preco" value="20">
+					<label class="aaa" for="checkbox51">Sequestro. - 20 Meses</label> <br>
+
+					<input id="checkbox52" type="checkbox" name="valor52" id="preco" value="10">
+					<label class="aaa" for="checkbox52">Cárcere Privado. - 10 Meses</label> <br>
+
+					<input id="checkbox53" type="checkbox" name="valor53" id="preco" value="10">
+					<label class="aaa" for="checkbox53">Agressão. - 10 Meses</label> <br>
+
+					<input id="checkbox54" type="checkbox" name="valor54" id="preco" value="20">
+					<label class="aaa" for="checkbox54">Furto De Residencia. - 20 Meses</label> <br>
+
+					<input id="checkbox55" type="checkbox" name="valor55" id="preco" value="50">
+					<label class="aaa" for="checkbox55">Terrorismo. - 50 Meses</label> <br>
+
+					<input id="checkbox56" type="checkbox" name="valor56" id="preco" value="30">
+					<label class="aaa" for="checkbox56">Tráfico de Armas. - 30 Meses</label> <br>
+
+					<input id="checkbox57" type="checkbox" name="valor57" id="preco" value="30">
+					<label class="aaa" for="checkbox57">Porte ilegal de arma (Alto Calibre). - 30 Meses</label> <br>
+
+					<input id="checkbox58" type="checkbox" name="valor58" id="preco" value="20">
+					<label class="aaa" for="checkbox58">Porte Ilegal de arma (Baixo Calibre). - 20 Meses</label> <br>
+
+					<input id="checkbox59" type="checkbox" name="valor59" id="preco" value="10">
+					<label class="aaa" for="checkbox59">Disparo de Arma. - 10 Meses</label> <br>
+
+					<input id="checkbox60" type="checkbox" name="valor60" id="preco" value="5">
+					<label class="aaa" for="checkbox60">Posse de munição Ilegal. - 5 Meses</label> <br>
+
+					<input id="checkbox61" type="checkbox" name="valor61" id="preco" value="30">
+					<label class="aaa" for="checkbox61">Trafico de coletes balisticos. - 30 Meses</label> <br>
+
+					<input id="checkbox62" type="checkbox" name="valor62" id="preco" value="10">
+					<label class="aaa" for="checkbox62">Posse de colete balistico. - 10 Meses</label> <br>
+
+					<input id="checkbox63" type="checkbox" name="valor63" id="preco" value="15">
+					<label class="aaa" for="checkbox63">Tráfico de Entorpecente. - 15 Meses</label> <br>
+
+					<input id="checkbox64" type="checkbox" name="valor64" id="preco" value="10">
+					<label class="aaa" for="checkbox64">Receptação de Veículos. - 10 Meses</label> <br>
+
+					<input id="checkbox65" type="checkbox" name="valor65" id="preco" value="20">
+					<label class="aaa" for="checkbox65">Roubo de Veículo. - 20 Meses</label> <br>
+
+					<input id="checkbox66" type="checkbox" name="valor66" id="preco" value="10">
+					<label class="aaa" for="checkbox66">Furto de Veículo. - 10 Meses</label> <br>
+
+					<input id="checkbox67" type="checkbox" name="valor67" id="preco" value="10">
+					<label class="aaa" for="checkbox67">Dinheiro Sujo. - 10 Meses</label> <br>
+
+					<input id="checkbox68" type="checkbox" name="valor68" id="preco" value="10">
+					<label class="aaa" for="checkbox68">Evasão de Acidente. - 10 Meses</label> <br>
+
+					<input id="checkbox69" type="checkbox" name="valor69" id="preco" value="20">
+					<label class="aaa" for="checkbox69">Formação de Quadrilha. - 20 Meses</label> <br>
+
+					<input id="checkbox70" type="checkbox" name="valor70" id="preco" value="30">
+					<label class="aaa" for="checkbox70">Falsa Identidade. - 30 Meses</label> <br>
+
+					<input id="checkbox71" type="checkbox" name="valor71" id="preco" value="5">
+					<label class="aaa" for="checkbox71">Perturbação da Ordem. - 5 Meses</label> <br>
+
+					<input id="checkbox72" type="checkbox" name="valor72" id="preco" value="20">
+					<label class="aaa" for="checkbox72">Ameaças Criminosas. - 20 Meses</label> <br>
+
+					<input id="checkbox73" type="checkbox" name="valor73" id="preco" value="30">
+					<label class="aaa" for="checkbox73">Comunicação Fraudulenta. - 30 Meses</label> <br>
+
+					<input id="checkbox74" type="checkbox" name="valor74" id="preco" value="10">
+					<label class="aaa" for="checkbox74">Desobediencia. - 10 Meses</label> <br>
+
+					<input id="checkbox75" type="checkbox" name="valor75" id="preco" value="10">
+					<label class="aaa" for="checkbox75">Posse de ferramentas de roubo | Lockpick. - 10 Meses</label>
+					<br>
+
+					<input id="checkbox78" type="checkbox" name="valor78" id="preco" value="15">
+					<label class="aaa" for="checkbox78">Oposição a execução de ato legal. - 15 Meses</label> <br>
+
+					<input id="checkbox79" type="checkbox" name="valor79" id="preco" value="60">
+					<label class="aaa" for="checkbox79">Abuso de Autoridade. - 60 Meses</label> <br>
+
+					<input id="checkbox80" type="checkbox" name="valor80" id="preco" value="10">
+					<label class="aaa" for="checkbox80">Ocultação Facial. - 10 Meses</label> <br>
+
+					<input id="checkbox81" type="checkbox" name="valor81" id="preco" value="30">
+					<label class="aaa" for="checkbox81">Omissão de socorro. - 30 Meses</label> <br>
+
+					<input id="checkbox82" type="checkbox" name="valor82" id="preco" value="20">
+					<label class="aaa" for="checkbox82">Uso de equipamento restrito. 20 Meses</label> <br>
+
+					<input id="checkbox83" type="checkbox" name="valor83" id="preco" value="30">
+					<label class="aaa" for="checkbox83">Desacato - 30 Meses</label> <br>
+
+					<input id="checkbox84" type="checkbox" name="valor84" id="preco" value="10">
+					<label class="aaa" for="checkbox84">Roubo de Veículo. - 33 Meses</label> <br>
+
+				</form>
+			</div>
+			<input class="user-id5 result" id="value-arre" onkeypress='validate(event)' maxlenght="9" spellcheck="false"
+				value="" placeholder="Tempo">
+			<div id="meses">
+				<h3>Meses de prisão</h3>
+			</div>
+			<div>
+				<h2 id="ping-1">*</h2>
+			</div>
+			<div id="linha-2"></div>
+			<div class="confirmar-arrest"></div>
+		</div>
+
+		<div id="fines">
+			<div id="text3">
+				<h2>Efetuar multas no cidadão</h2>
+			</div>
+			<input class="user2" id="user-tick" onkeypress='validate(event)' maxlenght="9" spellcheck="false" value=""
+				placeholder="Passaporte">
+			<input class="user-id4 date-form" id="data-tick" maxlenght="9" spellcheck="false" value=""
+				placeholder="DATA">
+			<input class="information" id="info-tick" maxlenght="9" spellcheck="false" value="" placeholder="">
+			<div id="pass2">
+				<h3>Passaporte do cidadão</h3>
+			</div>
+			<div id="text5">
+				<h2>Codigo Penal</h2>
+			</div>
+			<div id="icon-date2"></div>
+			<div id="linha-1"></div>
+			<div id="scroll-container-fine">
+				<form class="checkbox-1" action="">
+					<input id="checkbox1-1" type="checkbox" name="valor1-1" id="preco" value="6000">
+					<label class="aaa" for="checkbox1-1">Homocidio Doloso Qualificado. - 6.000 Multa</label> <br>
+
+					<input id="checkbox2" type="checkbox" name="valor2" id="preco" value="5000">
+					<label class="aaa" for="checkbox2">Homocidio Doloso. - 5.000 Multa</label> <br>
+
+					<input id="checkbox3" type="checkbox" name="valor3" id="preco" value="4000">
+					<label class="aaa" for="checkbox3">Tentativa de Homocidio. - 4.000 Multa</label> <br>
+
+					<input id="checkbox4" type="checkbox" name="valor4" id="preco" value="1000">
+					<label class="aaa" for="checkbox4">Homocidio Cupulso. - 1.000 Multa</label> <br>
+
+					<input id="checkbox5" type="checkbox" name="valor5" id="preco" value="1000">
+					<label class="aaa" for="checkbox5">Homocidio Cupulso no Transito. - 1.000 Multa</label> <br>
+
+					<input id="checkbox6" type="checkbox" name="valor6" id="preco" value="500">
+					<label class="aaa" for="checkbox6">Roubo. - 500 Multas</label> <br>
+
+					<input id="checkbox7" type="checkbox" name="valor7" id="preco" value="2000">
+					<label class="aaa" for="checkbox7">Roubo a Banco. - 2.000 Multa</label> <br>
+
+					<input id="checkbox8" type="checkbox" name="valor8" id="preco" value="5000">
+					<label class="aaa" for="checkbox8">Roubo a Loja. - 5.000 Multas</label> <br>
+
+					<input id="checkbox9" type="checkbox" name="valor9" id="preco" value="2000">
+					<label class="aaa" for="checkbox9">Furto a Caixa Eletronico. - 2.000 Multas</label> <br>
+
+					<input id="checkbox10" type="checkbox" name="valor10" id="preco" value="20">
+					<label class="aaa" for="checkbox10">Sequestro. - 20 Meses</label> <br>
+
+					<input id="checkbox11" type="checkbox" name="valor11" id="preco" value="10">
+					<label class="aaa" for="checkbox11">Cárcere Privado. - 10 Meses</label> <br>
+
+					<input id="checkbox12" type="checkbox" name="valor12" id="preco" value="10">
+					<label class="aaa" for="checkbox12">Agressão. - 10 Meses</label> <br>
+
+					<input id="checkbox13" type="checkbox" name="valor13" id="preco" value="20">
+					<label class="aaa" for="checkbox13">Furto De Residencia. - 20 Meses</label> <br>
+
+					<input id="checkbox14" type="checkbox" name="valor14" id="preco" value="50">
+					<label class="aaa" for="checkbox14">Terrorismo. - 50 Meses</label> <br>
+
+					<input id="checkbox20" type="checkbox" name="valor20" id="preco" value="30">
+					<label class="aaa" for="checkbox20">Tráfico de Armas. - 30 Meses</label> <br>
+
+					<input id="checkbox15" type="checkbox" name="valor15" id="preco" value="30">
+					<label class="aaa" for="checkbox15">Porte ilegal de arma (Alto Calibre). - 30 Meses</label> <br>
+
+					<input id="checkbox16" type="checkbox" name="valor16" id="preco" value="20">
+					<label class="aaa" for="checkbox16">Porte Ilegal de arma (Baixo Calibre). - 20 Meses</label> <br>
+
+					<input id="checkbox17" type="checkbox" name="valor17" id="preco" value="10">
+					<label class="aaa" for="checkbox17">Disparo de Arma. - 10 Meses</label> <br>
+
+					<input id="checkbox18" type="checkbox" name="valor18" id="preco" value="5">
+					<label class="aaa" for="checkbox18">Posse de munição Ilegal. - 5 Meses</label> <br>
+
+					<input id="checkbox19" type="checkbox" name="valor19" id="preco" value="30">
+					<label class="aaa" for="checkbox19">Trafico de coletes balisticos. - 30 Meses</label> <br>
+
+					<input id="checkbox21" type="checkbox" name="valor21" id="preco" value="10">
+					<label class="aaa" for="checkbox21">Posse de colete balistico. - 10 Meses</label> <br>
+
+					<input id="checkbox22" type="checkbox" name="valor22" id="preco" value="15">
+					<label class="aaa" for="checkbox22">Tráfico de Entorpecente. - 15 Meses</label> <br>
+
+					<input id="checkbox23" type="checkbox" name="valor23" id="preco" value="10">
+					<label class="aaa" for="checkbox23">Receptação de Veículos. - 10 Meses</label> <br>
+
+					<input id="checkbox24" type="checkbox" name="valor24" id="preco" value="20">
+					<label class="aaa" for="checkbox24">Roubo de Veículo. - 20 Meses</label> <br>
+
+					<input id="checkbox25" type="checkbox" name="valor25" id="preco" value="10">
+					<label class="aaa" for="checkbox25">Furto de Veículo. - 10 Meses</label> <br>
+
+					<input id="checkbox26" type="checkbox" name="valor26" id="preco" value="10">
+					<label class="aaa" for="checkbox26">Dinheiro Sujo. - 10 Meses</label> <br>
+
+					<input id="checkbox27" type="checkbox" name="valor27" id="preco" value="10">
+					<label class="aaa" for="checkbox27">Evasão de Acidente. - 10 Meses</label> <br>
+
+					<input id="checkbox28" type="checkbox" name="valor28" id="preco" value="20">
+					<label class="aaa" for="checkbox28">Formação de Quadrilha. - 20 Meses</label> <br>
+
+					<input id="checkbox29" type="checkbox" name="valor29" id="preco" value="30">
+					<label class="aaa" for="checkbox29">Falsa Identidade. - 30 Meses</label> <br>
+
+					<input id="checkbox30" type="checkbox" name="valor30" id="preco" value="5">
+					<label class="aaa" for="checkbox30">Perturbação da Ordem. - 5 Meses</label> <br>
+
+					<input id="checkbox31" type="checkbox" name="valor31" id="preco" value="20">
+					<label class="aaa" for="checkbox31">Ameaças Criminosas. - 20 Meses</label> <br>
+
+					<input id="checkbox32" type="checkbox" name="valor32" id="preco" value="30">
+					<label class="aaa" for="checkbox32">Comunicação Fraudulenta. - 30 Meses</label> <br>
+
+					<input id="checkbox33" type="checkbox" name="valor33" id="preco" value="10">
+					<label class="aaa" for="checkbox33">Desobediencia. - 10 Meses</label> <br>
+
+					<input id="checkbox34" type="checkbox" name="valor34" id="preco" value="10">
+					<label class="aaa" for="checkbox34">Posse de ferramentas de roubo | Lockpick. - 10 Meses</label>
+					<br>
+
+					<input id="checkbox35" type="checkbox" name="valor35" id="preco" value="15">
+					<label class="aaa" for="checkbox35">Oposição a execução de ato legal. - 15 Meses</label> <br>
+
+					<input id="checkbox36" type="checkbox" name="valor36" id="preco" value="60">
+					<label class="aaa" for="checkbox36">Abuso de Autoridade. - 60 Meses</label> <br>
+
+					<input id="checkbox37" type="checkbox" name="valor37" id="preco" value="10">
+					<label class="aaa" for="checkbox37">Ocultação Facial. - 10 Meses</label> <br>
+
+					<input id="checkbox38" type="checkbox" name="valor38" id="preco" value="30">
+					<label class="aaa" for="checkbox38">Omissão de socorro. - 30 Meses</label> <br>
+
+					<input id="checkbox39" type="checkbox" name="valor39" id="preco" value="20">
+					<label class="aaa" for="checkbox39">Uso de equipamento restrito. 20 Meses</label> <br>
+
+					<input id="checkbox40" type="checkbox" name="valor40" id="preco" value="30">
+					<label class="aaa" for="checkbox40">Desacato - 30 Meses</label> <br>
+
+					<input id="checkbox41" type="checkbox" name="valor41" id="preco" value="10">
+					<label class="aaa" for="checkbox41">Roubo de Veículo. - 33 Meses</label> <br>
+
+				</form>
+			</div>
+			<input class="user-id6 result" id="value-tick" onkeypress='validate(event)' maxlenght="9" spellcheck="false"
+				value="" placeholder="Valor">
+			<div id="meses">
+				<h3>Quantida de multa</h3>
+			</div>
+			<div>
+				<h2 id="ping--2">*</h2>
+			</div>
+			<div id="linha-2"></div>
+			<div class="confirmar-fine">
+			</div>
+		</div>
+		<div id="plates">
+			<div id="plate-result">
+				<input class="user" id="user_id" maxlenght="9" type="number" spellcheck="false" value=""
+					placeholder="Passaporte">
+				<input class="user-id date-form" id="data-war" maxlenght="9" spellcheck="false" value=""
+					placeholder="DATA">
+				<div class="plate-itens">
+					<div class="info2"></div>
+				</div>
+			</div>
+			<div id="info-result-plates"></div>
+		</div>
+	</div>
+	<script src="./jquery.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<buttom id="actionbuttom"></buttom>
+</body>
+
+</html>

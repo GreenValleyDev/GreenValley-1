@@ -1,0 +1,441 @@
+* {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+    image-rendering: crisp-edges;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+main {
+    height: 100vh;
+    position: absolute;
+    width: 25rem;
+    right: 0rem;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding-bottom: 1.875rem;
+    padding-right: 1.875rem;
+}
+
+.carHud-container {
+    height: 8.75rem;
+    width: 15.9375rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 9.375rem 9.375rem 0.625rem 0.625rem;
+    padding-top: 0.625rem;
+    margin-bottom: 1.25rem;
+    margin-right: 0.875em;
+}
+
+.circleGas-container {
+    height: 6.75rem;
+    width: 9.5625rem;
+    position: absolute;
+    right: -2.5625rem;
+    bottom: 2.5313rem;
+    transform: rotate(3.2deg);
+    border-radius: 2.1875rem;
+    margin-bottom: 7.5rem;
+}
+
+.circleGas-container circle {
+    fill: none;
+    stroke-width: 0.375rem;
+    transition: all .5s;
+    transform: scalex(-1);
+    cx: 3.125rem;
+    cy: 6.875rem;
+    r: 7.1875rem;
+}
+
+
+.gasCircleFillBack {
+    stroke: #101314 !important;
+    stroke-dasharray: 30rem;
+
+}
+
+.gasCircleFill {
+    stroke-dasharray: 23.125rem;
+    stroke: #FFC700;
+}
+
+.gasLetter {
+    position: absolute;
+    font-family: 'Aftika';
+    color: white;
+}
+
+.g1 {
+    right: 6.3125rem;
+    bottom: 16.25rem;
+}
+
+.g0 {
+    right: 2.75rem;
+    bottom: 8.75rem;
+}
+
+/* ==================================================== */
+
+
+.circleVelo-container {
+    height: 8.125rem;
+    width: 20rem;
+    position: absolute;
+    bottom: 2.5625rem;
+
+    margin-bottom: 7.5rem;
+
+}
+
+.circleVelo-container circle {
+    fill: none;
+    stroke: #97D05F;
+    stroke-width: 0.5rem;
+   
+    stroke-dasharray: 45rem;
+    
+    transition: all .5s;
+    cx: 9.375rem;
+    cy: 8.3125rem;
+    r: 7.1875rem;
+   
+}
+
+.veloCircleFill {
+    filter: drop-shadow(0px 0px 5px #98d05f67);
+}
+
+.veloCircleFillBack {
+    stroke: #101314 !important;
+}
+
+.veloText-container {
+    position: absolute;
+    margin-top: 2.1875rem;
+    font-family: 'Aftika';
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 18.75em;
+    right: 1.8125em;
+}
+
+.veloText-container h1 {
+    font-size: 2.5rem;
+    height: 2.8125rem;
+
+}
+
+.veloText-container p {
+    font-size: 0.875rem;
+    height: 0.0625rem;
+    color: rgba(255, 255, 255, 0.685);
+}
+
+/* ------------------------------------------------------ */
+
+.carIcons-container {
+    width: 6.25rem;
+    height: 8.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    right: 7.999rem;
+}
+
+
+.motorImg {
+    height: 1.5625rem;
+    filter:drop-shadow(0px 0px 10px #90c65ba6) !important;
+    transition: all .5s;
+}
+
+.seatbeltImg {
+    height: 1.875rem;
+    transform: rotate(45deg);
+    
+    filter: brightness(0.3) grayscale(1) ;
+    margin-right: 1.875rem;
+    
+    transition: all .5s;
+}
+
+.lamp {
+    height: 1.4625rem;
+    transition: all .5s;
+    margin-left: 1.5625em;
+}
+
+
+.activeIcon {
+    filter: brightness(1) grayscale(0) drop-shadow(0px 0px 10px #90c65ba6) !important;
+}
+
+.march {
+    height: 2.5em;
+    width: 6.25em;
+    border-radius: 625em;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 18.75em;
+    margin-right: 1.25em;
+}
+
+.march img {
+    height: 1.25em;
+    margin-right: 0.625em;
+}
+
+.march p {
+    font-family: 'Aftika';
+    color: white;
+    font-size: 1.25em;
+}
+
+/* --------------------------------------------------- */
+
+.userHud-container {
+    height: 6.25rem;
+    width: 19rem;
+    background-color: #12121281;
+    z-index: 1;
+    border-radius: 0.9375rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.lsHud-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 12.5rem;
+    height: 100%;
+}
+
+.lsHudUnit {
+    width: 100%;
+    height: 1.875rem;
+    display: flex;
+    padding: 0rem 0.9375rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.lsHudUnit img {
+    height: 1.25rem;
+    margin-right: 0.625rem;
+}
+
+.lsHud {
+    width: 100%;
+    border-radius: 62.5rem;
+    height: 0.75rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.lsFill {
+    width: 80%;
+    height: 100%;
+    border-radius: 0.625rem;
+}
+
+/* --------------------------------------------------- */
+
+.mic-container {
+    height: 100%;
+    width: 6.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mic-line {
+    height: 100%;
+    width: 0.125rem;
+    background-color: #171919;
+    box-shadow: 0.0625rem 0rem 0.3125rem rgba(0, 0, 0, 0.616);
+}
+
+.mic {
+    min-height: 3.9375rem;
+    width: 3.9375rem;
+    border-radius: 6.25rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 0.1875rem #171919;
+    box-shadow: inset 0.1875rem 0rem 0.625rem rgba(0, 0, 0, 0.466),  0rem 0rem 0.9375rem rgba(0, 0, 0, 0.479);
+
+}
+
+.mic img {
+    height: 1.875rem;
+    filter: grayscale(1);
+    opacity: 80%;
+    transition: all .5s;
+}
+
+.activeMic {
+    filter: grayscale(0) drop-shadow(0px 0px 10px #90C65B) !important; 
+    opacity: 100%;
+
+
+}
+
+.clock-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.3125rem;
+}
+
+.clock-container img {
+    height: 1.25rem;
+    margin-right: 0.625rem;
+}
+
+.clock-container p {
+    font-family: 'Aftika';
+    color: white;
+}
+
+/* -------------------------------------- */
+
+header {
+    width: 31.25rem;
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.infoText {
+	font-family: 'Aftika';
+    font-size: 0.8125rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.625rem;
+    background-color: #12121281;
+    height: 2.5rem;
+    padding: 0rem 1.25rem;
+    border-radius: 6.25rem;
+}
+
+.infoText p span {
+    color: rgba(255, 255, 255, 0.541);
+}
+
+.infoText img {
+    margin-right: 0.625rem;
+    height: 1.125rem;
+}
+
+.infoFooter-container {
+    display: flex;
+    align-items: center;
+}
+
+
+@keyframes fade {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+.fade {
+    animation: fade .6s;
+}
+
+#logo{ 
+    width: 10rem;
+       height: 10rem;
+       background-image: url(https://cdn.discordapp.com/attachments/820096368097493042/930243716470439976/LOGO_Revoada_RJ_RP_1024x1024_Transparente_-_by_Design_Ideal.png);
+       background-size: 100% ;
+       background-position: center;
+       position: absolute;
+       top: 0%;
+       left: 0%;
+       opacity: 0.8;
+       right: 0;
+       margin: auto;
+}
+
+.logo-animation {
+    animation: rotate 1s ease-out;
+}
+  
+@keyframes rotate {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+@media (max-width: 1400px) {
+
+    html {
+        font-size: 13.5px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    html {
+        font-size: 10.5px;
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    html {
+        font-size: 9.5px;
+    }
+}
+
+@media (max-width: 1700px) {
+
+    html {
+        font-size: 12.5px;
+    }
+
+}

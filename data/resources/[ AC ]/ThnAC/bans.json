@@ -1,0 +1,553 @@
+{
+    "bans": {
+        "282012": {
+            "time": -1,
+            "ban": true,
+            "motivo": "stop_ac",
+            "licencas": [
+                "110000134e471ff",
+                "af67353bf72edb13fa0b3f5a42d07f2970b2cc47"
+            ]
+        },
+        "121656": {
+            "time": -1,
+            "ban": true,
+            "licencas": [
+                "1100001540f3eaf",
+                "235d94ac452d7374c0121e26712845e1321de0f1"
+            ],
+            "motivo": "municao-infinita"
+        },
+        "31773": {
+            "time": -1,
+            "ban": true,
+            "licencas": [
+                "11000015659597f",
+                "652a19c346050deee50c19d3c3094828960f4795",
+                "934547503385313320"
+            ],
+            "motivo": "spawn_armas"
+        },
+        "100101": {
+            "time": -1,
+            "ban": true,
+            "licencas": [
+                "11000013486f377",
+                "7f3ef14105716251da7deba70612fbef2d3f1e1b",
+                "2535472731110186",
+                "1829582456035567",
+                "451811912330641408"
+            ],
+            "motivo": "municao-infinita"
+        },
+        "3480": {
+            "time": -1,
+            "ban": true,
+            "licencas": [
+                "11000015263dcd6",
+                "538b22a47596f8cd0df00ce380724fa3391d598a",
+                "2535406466858879",
+                "1688850144578765",
+                "920806992459755561"
+            ],
+            "motivo": "municao-infinita"
+        },
+        "67850": {
+            "time": -1,
+            "ban": true,
+            "licencas": [
+                "11000014c2667a2",
+                "bb7335db3d1c83483e5f0301241c1ce22ecabb17"
+            ],
+            "motivo": "spawn_armas"
+        },
+        "7510": {
+            "time": -1,
+            "ban": true,
+            "licencas": [
+                "110000143ef1c34",
+                "0a947ccce8c82d4dbbcdaa11a74fb08bd0ce6c10"
+            ],
+            "motivo": "spawn_armas"
+        },
+        "124787": {
+            "time": -1,
+            "ban": true,
+            "licencas": [],
+            "motivo": "spawn_armas"
+        },
+        "158403": {
+            "time": -1,
+            "ban": true,
+            "licencas": [
+                "1100001492a8bb3",
+                "de5cf6702f3bcd5a27008f1eb4dd77c103e73a4d",
+                "697426768453173258"
+            ],
+            "motivo": "explosion"
+        },
+        "93244": {
+            "time": -1,
+            "ban": true,
+            "licencas": [],
+            "motivo": "stopper"
+        },
+        "191271": {
+            "time": -1,
+            "ban": true,
+            "licencas": [
+                "1100001455900d3",
+                "a99b7076b8452576499ac4e6bbb101d26858c89e",
+                "683099515162853382"
+            ],
+            "motivo": "spawn_armas"
+        },
+        "27553": {
+            "time": -1,
+            "ban": true,
+            "licencas": [
+                "11000013dc1c81d",
+                "a337eb76b96ba8f5a471bfe42d48a38a9aebff59",
+                "2535467918401206",
+                "985154102610154",
+                "666797779355697168"
+            ],
+            "motivo": "spawn_armas"
+        },
+        "12623": {
+            "time": -1,
+            "ban": true,
+            "motivo": "spawn_armas",
+            "licencas": []
+        },
+        "35481": {
+            "time": -1,
+            "ban": true,
+            "licencas": [
+                "110000135108bfc",
+                "802a2821496638960323e1ee0ececa188416d980",
+                "418105211790295081"
+            ],
+            "motivo": "spawn_armas"
+        }
+    },
+    "268414": {
+        "Status": "NEGADO"
+    },
+    "U00P0JMM112": {
+        "Status": "NEGADO"
+    },
+    "4NNO4KO9K13": {
+        "Status": "NEGADO"
+    },
+    "hwidbans": {
+        "4:36ba960d3a7560904671019bebc495cda0b2dbc679194346d38d2700e39d2351": {
+            "time": -1,
+            "id": 124787
+        },
+        "4:8aec87d9bd8380054bb8f612c99b63d73fbf87d7822d0ad466a73487254f973a": {
+            "id": 282012,
+            "time": -1
+        },
+        "3:f701deba1a1e8c6f0efd750e2830cb4756d29bc94c1fa79703c027617dbfffdf": {
+            "time": -1,
+            "id": 100101
+        },
+        "2:86f6e85c6a5fa822f896fd432b9ecb47b1bdfe2dcc4f933277bb714043d3946f": {
+            "time": -1,
+            "id": 35481
+        },
+        "3:f8dbe1a53d9232eff6478df12e89c667d637fed3756c3e0dc65f605a4340c1dd": {
+            "time": -1,
+            "id": 27553
+        },
+        "4:01be3a0e2b773cc376a40b4b5651d558df61399115087ae0c4b5f73ac5150b67": {
+            "time": -1,
+            "id": 31773
+        },
+        "2:ee56f80a0d7ae425a5b61d3fd5992f47644c084ba77dae2feeec6f53adceb230": {
+            "id": 12623,
+            "time": -1
+        },
+        "3:84119a7f7b89e0118bd264149bb798e763f6802dc989d656cf236bb8f5c87b55": {
+            "time": -1,
+            "id": 124787
+        },
+        "2:96f1e47233fa48d238eff95ccc820927b64530f664af4c76c47c9c87287ae8a1": {
+            "id": 282012,
+            "time": -1
+        },
+        "3:c8860a49b10f366afee0a8de58e4634ecb2b499a63cd1b5b84cd467b83b572da": {
+            "time": -1,
+            "id": 158403
+        },
+        "3:9a1f5cf5403348da6b38f03c133c651fe7726a08815e935ab1cb185b264740d9": {
+            "time": -1,
+            "id": 31773
+        },
+        "4:5b45d39eb21d263063fed03c987ac80a96d328876920e9d34400de896b623ded": {
+            "time": -1,
+            "id": 31773
+        },
+        "5:f7b5d75a5a3305da12b2382c6ab6b9eb0fca2db164d265c9aa958d42c26a82d7": {
+            "time": -1,
+            "id": 121656
+        },
+        "5:5e4745bc2b7c80ab3b18ebe80888f8154687f100389b9d0d6035892bd1f5550d": {
+            "time": -1,
+            "id": 67850
+        },
+        "4:8ce7fa2f9fbe4e9ac3edb4b499ad5e141d5f9e7160206eb40711a1eef8bcb96c": {
+            "id": 93244,
+            "time": -1
+        },
+        "4:969ce8405efb3c85b6322b62105463d1d2b653a44a74b2a6eee058abcd42bf59": {
+            "time": -1,
+            "id": 35481
+        },
+        "2:9ab46f0eed59e2c4076458f172a496c1eca9cc5bf055e6250194dd2fb99300ff": {
+            "time": -1,
+            "id": 121656
+        },
+        "4:d49d1b5a6ad96cfafd7ef04b87dc176643b5db5206e95264729ff5c8627ba1d9": {
+            "time": -1,
+            "id": 35481
+        },
+        "4:c202c2490a1ac015e090c38031dbc89e78678d01a6bd721cc2ed4d8ebfde446c": {
+            "time": -1,
+            "id": 100101
+        },
+        "4:065b876778c88084d8eca2a84601bd298d65bbbe992a4ccde70838ad29d7ee27": {
+            "time": -1,
+            "id": 27553
+        },
+        "4:f700753921a43e6205644a36035829ff52ada55f8504622669fef091586d2fd8": {
+            "time": -1,
+            "id": 100101
+        },
+        "2:8670999a947c417f8b120b19d64c770924d3718fe1adcfef3158d12722d8b174": {
+            "time": -1,
+            "id": 7510
+        },
+        "4:6d5e556265c711ab6e123415fa6bcd0a35df49c5d77cd1ca577324934aac61c6": {
+            "time": -1,
+            "id": 191271
+        },
+        "4:e4f3fa5e38c6209a6609e7410de7589c645793b6246bb9715f1d8019ac7647d4": {
+            "time": -1,
+            "id": 124787
+        },
+        "4:1dcd43907759d371767126fd2704a9b0e47819ca51b969843f06aad272bcb9d9": {
+            "time": -1,
+            "id": 7510
+        },
+        "3:0b5a2b86fc4d7a6df4d7c0c82d689150652c0752935e92eae0d1b8ddd544cbed": {
+            "time": -1,
+            "id": 191271
+        },
+        "4:08b8b44539d38729bc318a4b00425da46db232fe082f881637ac2fb22141dafe": {
+            "id": 12623,
+            "time": -1
+        },
+        "4:83c59b71dd60bd8435c710c2be1613d4451abff0c381a7d8582a5e59c5cd4dfc": {
+            "time": -1,
+            "id": 3480
+        },
+        "5:e6b44b9c03b475184f365eb2a84e7df855b89994ebcaee9f02962e0d52b48ca5": {
+            "time": -1,
+            "id": 27553
+        },
+        "4:55fbbc1727043f8d7f9f7f513dc8aa13e7a6223e43d404c8a272874c15180c92": {
+            "id": 93244,
+            "time": -1
+        },
+        "4:90a8e3cb3f108369d6b92acf0fd5f4f8595309d189c1ac34563c27d587892047": {
+            "time": -1,
+            "id": 121656
+        },
+        "4:e1d0e312eb86b05208187ed140b5dd4766272c8cfbeb0ccabc2cf7dc72003a8f": {
+            "time": -1,
+            "id": 191271
+        },
+        "4:f2e43628ac15b06e04a1e13b1dc654601599ec44292000eaf20b7f51268e4e28": {
+            "time": -1,
+            "id": 67850
+        },
+        "3:79bf5e7837cd70465b87af0ea8d5a8a06339e509f58034cc2a1f3c636a6ecaa5": {
+            "id": 12623,
+            "time": -1
+        },
+        "3:18ede0b7d12b48ea074524d54495267fd779569162635b4d7c9944dd43a017b2": {
+            "id": 282012,
+            "time": -1
+        },
+        "4:d866693fb2d6e1f5a6c753582c308b2eb32e23eaf621d2f7c7912d93649edc4f": {
+            "time": -1,
+            "id": 100101
+        },
+        "5:9940d6781c03d86d65db2ab15b0cda78a2e2afec6c5394c51ee60c7eb0a3277e": {
+            "time": -1,
+            "id": 191271
+        },
+        "4:5ee90fbb425098d89b09b1c89e25996565b6de69189728c3633ea49543a26f93": {
+            "time": -1,
+            "id": 31773
+        },
+        "2:598864dde633ac9004c5886677d81226984924f32fbb94fd8c2813ec3c49d457": {
+            "time": -1,
+            "id": 191271
+        },
+        "5:1a3e7e607629bc1dd65177df604ee05d4c00ece4f0044f346134d48603794c38": {
+            "time": -1,
+            "id": 35481
+        },
+        "4:bb576f88aae79404a47504e14a715175f461a51951ca23435bdfac10251fe075": {
+            "time": -1,
+            "id": 124787
+        },
+        "4:b337bd52deb849d5b58892f2eeceb9729dd567fd7cca5bdfa3096f8a96652dbe": {
+            "id": 282012,
+            "time": -1
+        },
+        "4:1fc485d428f70ef647e25a56551353dc1001700b9e6c6756a0f115825194a980": {
+            "time": -1,
+            "id": 121656
+        },
+        "3:6baf103c42e1ac27bc39ddc2632f25acbb52a38e8d7a3ff56d8a15bc1b66f361": {
+            "time": -1,
+            "id": 3480
+        },
+        "3:78756eb9e20d69204b871a610c76da4157fc985936e3b8bce250712c1d079cbb": {
+            "time": -1,
+            "id": 121656
+        },
+        "4:1dca12680764b13bfbd108729d20dcdfe25ea66255746b095f5af16ff0f73c9a": {
+            "time": -1,
+            "id": 7510
+        },
+        "2:9d76a54511522c1d200fd8fc536c39a5f4577063555a28c058ea36b865e72bb1": {
+            "time": -1,
+            "id": 124787
+        },
+        "2:1841d2d6204f269c3daf19efa99bd02c1d0b72224f45a3907f461cc970c1a433": {
+            "time": -1,
+            "id": 27553
+        },
+        "4:f221788f2faaec5d5b19b00f83ccf22b3563cb850175ace6044273b5c8603acd": {
+            "time": -1,
+            "id": 3480
+        },
+        "4:0513cf3c23d9863cee462b6bee52ee3bff623893865513bc3a670d21001b2ae2": {
+            "time": -1,
+            "id": 35481
+        },
+        "4:69729edbc2d65031eb3d32b592ff976567aef16d169539dc787a23409723e2a3": {
+            "id": 12623,
+            "time": -1
+        },
+        "5:a1f6f83171afda6f5ade505c73c35dd39f7a9cc398c616fe029373ac65d44734": {
+            "time": -1,
+            "id": 3480
+        },
+        "4:07df0c53e0570512f810262b8b198f76e8de6ab3cb482fa76e72be69f4283068": {
+            "id": 12623,
+            "time": -1
+        },
+        "3:a80682f102baf887b81727fd74db6e09638ce85869bc9ee7315bc2239a9aaa3d": {
+            "time": -1,
+            "id": 7510
+        },
+        "4:5d9697837c112787dc4c40a9c8e6f5c0cb66d8697c7bbea30ac9bacd30380386": {
+            "time": -1,
+            "id": 67850
+        },
+        "4:1281636fe51b3a482223d1d3af11d65ac30da6043f4f016345597ca2f21325da": {
+            "time": -1,
+            "id": 158403
+        },
+        "4:06c6503afdb4975ebeee78dfd5cd9b295eaf90e9d92013fa2e372cc7fd5dcef9": {
+            "time": -1,
+            "id": 27553
+        },
+        "4:d1a5cbc4a9e9553ba1f09a806e5290a97eaff0374fc0a2ce2e52da0360f95c17": {
+            "time": -1,
+            "id": 7510
+        },
+        "4:4729416bb507a6d99dfddab0b21e51054786a782958271ec44d73edf71c89f43": {
+            "time": -1,
+            "id": 121656
+        },
+        "4:7b3e67a173c633c73d9c75c147ee851405629fecbbab21f20145d397212f5d74": {
+            "time": -1,
+            "id": 27553
+        },
+        "2:058f2a71700723f62c0433b7bd72ed4fc20a7a0bfc07baace0f7bb9420b3c085": {
+            "time": -1,
+            "id": 191271
+        },
+        "2:aa67ce73230069ef9ff043eb5d9a3de06e830e3736503f33e09a4eb88dd5a539": {
+            "time": -1,
+            "id": 158403
+        },
+        "4:663daddc03d16c78925eab362d2deb58cddf41bcb6b07dc2c79cc56df3fe5e06": {
+            "time": -1,
+            "id": 158403
+        },
+        "2:8115fe5da2c976f89c2ec95ff770bb07c3381f1bd496ca01ab3e10bbd1257643": {
+            "time": -1,
+            "id": 67850
+        },
+        "2:6ac0c3d032373c54235ba81fa63f0af30f86c52d1c7b6194e1aefa4899f6bea4": {
+            "time": -1,
+            "id": 3480
+        },
+        "5:75c016aecdb1b5063434fe53728ea457028e63a0e46de40dfc688809625da4d8": {
+            "id": 12623,
+            "time": -1
+        },
+        "4:6087d8cf41f46505cc9c3fdc1f32013e427d828d1c9404fad71ec46429e764a8": {
+            "time": -1,
+            "id": 67850
+        },
+        "4:1465878fef9a6d651a748b0b49b7796b0a01b8615ac46ea498e04efc41fc816e": {
+            "time": -1,
+            "id": 191271
+        },
+        "2:b432d45a7c0f84b233f9d3eb61a9c7db1d99698c9b39a206698084d99f3a41ef": {
+            "id": 93244,
+            "time": -1
+        },
+        "3:bf4d82503673f9a888f3ffe15759acc2fdf127c3eadd50e3f67a88eaf1d0b01d": {
+            "id": 93244,
+            "time": -1
+        },
+        "4:ce8bd9b52d8588018b1158a323802cad47286bb6ca221c15ea99f3d3b1a76af6": {
+            "time": -1,
+            "id": 158403
+        },
+        "4:4ebfb365560502ace126f6f634c1fed632958f577d02c340b62b1aa671f325e5": {
+            "time": -1,
+            "id": 3480
+        },
+        "4:9b5433c5798f91ba3e07ff91692c9699e950349cfd451250cbbdf692c4629e21": {
+            "id": 93244,
+            "time": -1
+        },
+        "2:3b5fc3a6f0b0759a2b2b36019f9bdccc7e480e6daefed064872cdf45e8a29f7f": {
+            "time": -1,
+            "id": 31773
+        },
+        "4:ac0ea4addc85d790b92c30c88734068ab65d59b008a4e46f471145edbecf7837": {
+            "id": 282012,
+            "time": -1
+        }
+    },
+    "SPM7IXIJI2": {
+        "Status": "NEGADO"
+    },
+    "IR7ROYI862": {
+        "Status": "NEGADO"
+    },
+    "9HVNUTM282": {
+        "Status": "NEGADO"
+    },
+    "MOMUOZ3V51": {
+        "Status": "NEGADO"
+    },
+    "ZSSJ8VO2W5": {
+        "Status": "NEGADO"
+    },
+    "Z444L4LW622": {
+        "Status": "NEGADO"
+    },
+    "0L8K3JUNS4": {
+        "Status": "NEGADO"
+    },
+    "H0LU88Z4T4": {
+        "Status": "NEGADO"
+    },
+    "023293XTZ7": {
+        "Status": "NEGADO"
+    },
+    "IOUOUPO6O1": {
+        "Status": "NEGADO"
+    },
+    "ZVKZN5RUO1": {
+        "Status": "NEGADO"
+    },
+    "73ZV0VV1N3": {
+        "Status": "NEGADO"
+    },
+    "HYUYLHL9O2": {
+        "Status": "NEGADO"
+    },
+    "4NN04KO9K13": {
+        "Status": "NEGADO"
+    },
+    "I0U0UP0601": {
+        "Status": "NEGADO"
+    },
+    "4NN0409K13": {
+        "Status": "NEGADO"
+    },
+    "RZXZL0VU82": {
+        "Status": "NEGADO"
+    },
+    "K77RSJ0631": {
+        "Status": "NEGADO"
+    },
+    "455OUV4423": {
+        "Status": "NEGADO"
+    },
+    "S6MTV0K1Z6": {
+        "Status": "NEGADO"
+    },
+    "POOJTUMLQ2": {
+        "Status": "NEGADO"
+    },
+    "4550UV4423": {
+        "Status": "NEGADO"
+    },
+    "0l8k3juns4": {
+        "Status": "NEGADO"
+    },
+    "1J9JW41Z51": {
+        "Status": "NEGADO"
+    },
+    "822NX6X2S6": {
+        "Status": "NEGADO"
+    },
+    "445OLIV4423": {
+        "Status": "NEGADO"
+    },
+    "SPM71XIJI2": {
+        "Status": "NEGADO"
+    },
+    "R94963Y6K25": {
+        "Status": "NEGADO"
+    },
+    "VT4Y282ZP1": {
+        "Status": "NEGADO"
+    },
+    "O23293XTZ7": {
+        "Status": "NEGADO"
+    },
+    "7YKU25RQQ3": {
+        "Status": "NEGADO"
+    },
+    "Y30UXQ7IS1": {
+        "Status": "NEGADO"
+    },
+    "KSJQJQW247": {
+        "Status": "NEGADO"
+    },
+    "R414WKWII3": {
+        "Status": "NEGADO"
+    },
+    "HYUYHL902": {
+        "Status": "NEGADO"
+    },
+    "ZSSJ8V02W5": {
+        "Status": "NEGADO"
+    }
+}

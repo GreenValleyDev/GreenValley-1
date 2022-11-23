@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>AntiCheat - Painel</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<script src="https://cdn.tailwindcss.com"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<link id="theme-stylesheet" rel="stylesheet" type="text/css" href="css/lighttheme.css" />
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<section id="notify-wrapper" class="absolute"></section>
+
+		<section id="thn-painel" class="w-2/3 h-4/5 overflow-y-auto overflow-x-hidden" style="display: none">
+			<div id="sidebar">
+				<div class="mx-8 my-10">
+					<div class="sidebar-header">
+						<img class="mx-auto w-28" src="https://cdn.discordapp.com/icons/704720712560148480/a_deabdfe5877ddd0f39474f53d669e4e5.gif?size=512" />
+						<h1 class="text-center mt-4 mb-3 text-white">Thunder AntiCheat</h1>
+					</div>
+					<div class="sidebar-links">
+						<a class="sidebar-link text-base xl:text-lg sidebar-link-active" href="#home">
+							<i class="fa-solid fa-house mr-3"></i>
+							Página Inicial
+						</a>
+						<a class="sidebar-link text-base xl:text-lg" href="#wall">
+							<i class="fa-solid fa-eye mr-3"></i>
+							Wall
+						</a>
+						<a class="sidebar-link text-base xl:text-lg" href="#spawner">
+							<i class="fa-solid fa-shield mr-3"></i>
+							Spawner
+						</a>
+						<a class="sidebar-link text-base xl:text-lg" href="#permissions">
+							<i class="fa-solid fa-key mr-3"></i>
+							Ger. Permissões
+						</a>
+						<a class="sidebar-link text-base xl:text-lg" href="#ban-info">
+							<i class="fa-solid fa-magnifying-glass mr-3"></i>
+							Ver. banimento
+						</a>
+						<a class="sidebar-link text-base xl:text-lg" href="#ban-player">
+							<i class="fa-solid fa-gavel mr-3"></i>
+							Aplic. banimento
+						</a>
+						<a class="sidebar-link text-base xl:text-lg" href="#configs">
+							<i class="fa-solid fa-gear mr-3"></i>
+							Configurações
+						</a>
+						<a class="sidebar-link text-base xl:text-lg" href="#information">
+							<i class="fa-solid fa-circle-plus mr-3"></i>
+							Informações
+						</a>
+					</div>
+				</div>
+			</div>
+			<div id="left-side">
+				<div id="top-navbar" class="flex">
+					<div class="ml-auto my-auto mr-8 xl:mr-14">
+						<div class="flex">
+							<a class="block no-underline" id="toggle-notifications" href="#">
+								<i class="fa-solid fa-bell" id="notify-bell"></i>
+							</a>
+							<a class="block no-underline ml-4" id="toggle-theme" href="#">
+								<i class="fa-solid fa-sun" id="theme-icon"></i>
+							</a>
+							<span class="border-x mx-3 xl:mx-6"></span>
+							<div class="mr-8 xl:mr-12">
+								<span class="text-sm xl:text-base">Olá, <b class="player-name">HeyyCzer</b></span>
+							</div>
+							<div>
+								<span class="text-sm xl:text-base">AC-ID <b class="anticheat-id">5755</b></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="body-container">
+					<div class="px-12 py-8">
+						<!-- INÍCIO -->
+						<div class="container-page page-home">
+							<div>Olá <b class="player-name">Heyy Czer</b>, seja bem-vindo!</div>
+							<div class="mx-12 mt-6 flex flex-wrap">
+								<div class="info-card flex w-max my-2 mx-auto">
+									<div class="icon-holder mr-4 bg-emerald-600">
+										<i class="fa-solid fa-bolt"></i>
+									</div>
+									<div>
+										<h1 id="staff-online">-/-</h1>
+										<h5>Staff online</h5>
+									</div>
+								</div>
+								<div class="info-card flex w-max my-2 mx-auto">
+									<div class="icon-holder mr-4 bg-blue-500">
+										<i class="fa-solid fa-user-large"></i>
+									</div>
+									<div>
+										<h1 id="players-online">-/-</h1>
+										<h5>Jogadores online</h5>
+									</div>
+								</div>
+								<div class="info-card flex w-max my-2 mx-auto">
+									<div class="icon-holder mr-4 bg-rose-700">
+										<i class="fa-solid fa-shield"></i>
+									</div>
+									<div>
+										<h1 id="protections">-/-</h1>
+										<h5>Proteções ativas</h5>
+									</div>
+								</div>
+							</div>
+							<div class="mt-6">
+								<h1>Últimos avisos/suspeitos</h1>
+								<div id="last-logs" class="grid grid-flow-row auto-rows-max overflow-y-auto"></div>
+							</div>
+						</div>
+
+						<!-- WALL -->
+						<div class="container-page page-wall" style="display: none">
+							<div>Funcionalidade: <b>Wall</b></div>
+							<div class="mx-5 my-5">
+								<div class="grid grid-cols-1 xl:grid-cols-3 gap-8">
+									<!-- ATIVAR/DESATIVAR WALL -->
+									<div class="toggle-card">
+										<label for="wallToggle" class="flex items-center cursor-pointer">
+											<!-- toggle -->
+											<div class="relative my-auto">
+												<!-- input -->
+												<input id="wallToggle" type="checkbox" class="sr-only" />
+												<!-- line -->
+												<div class="w-10 h-4 bg-gray-400 rounded-full shadow-inner"></div>
+												<!-- dot -->
+												<div class="dot absolute w-6 h-6 bg-white rounded-full shadow -left-1 -top-1 transition"></div>
+											</div>
+											<!-- label -->
+											<div class="toggle-text ml-3 text-gray-700 font-medium">Wall</div>
+										</label>
+									</div>
+									<!-- ATIVAR/DESATIVAR LINHAS -->
+									<div class="toggle-card">
+										<label for="wallLinesToggle" class="flex items-center cursor-pointer">
+											<!-- toggle -->
+											<div class="relative">
+												<!-- input -->
+												<input id="wallLinesToggle" type="checkbox" class="sr-only" />
+												<!-- line -->
+												<div class="w-10 h-4 bg-gray-400 rounded-full shadow-inner"></div>
+												<!-- dot -->
+												<div class="dot absolute w-6 h-6 bg-white rounded-full shadow -left-1 -top-1 transition"></div>
+											</div>
+											<!-- label -->
+											<div class="toggle-text ml-3 text-gray-700 font-medium">Linhas</div>
+										</label>
+									</div>
+									<div class="toggle-card">
+										<div class="relative z-0 w-full group">
+											<input
+												name="walldistance"
+												class="block py-2.5 px-0 w-full text-sm text-gray-700 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-amber-300 focus:outline-none focus:ring-0 focus:border-amber-300 peer"
+												placeholder=" "
+												required
+											/>
+											<label
+												for="walldistance"
+												class="absolute text-sm text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-amber-300 peer-focus:dark:text-amber-300 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+												>Distância</label
+											>
+										</div>
+									</div>
+									<!-- COR -->
+									<div class="toggle-card col-auto">
+										<div class="wall color-square" data-picker="wallInfo" id="wallInfo"></div>
+									</div>
+									<div class="toggle-card col-auto">
+										<div class="wall color-square" data-picker="wallLinesNormal" id="wallLinesNormal"></div>
+									</div>
+									<div class="toggle-card col-auto">
+										<div class="wall color-square" data-picker="wallLinesInvisible" id="wallLinesInvisible"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- MODO SPAWNER -->
+						<div class="container-page page-spawner" style="display: none">
+							<div>Funcionalidade: <b>Modo Spawner</b></div>
+							<div class="mx-5 my-5">
+								<div class="grid grid-cols-1 xl:grid-cols-3 gap-8">
+									<!-- ATIVAR/DESATIVAR SPAWNER -->
+									<div class="toggle-card">
+										<label for="spawnerToggle" class="flex items-center cursor-pointer">
+											<!-- toggle -->
+											<div class="relative my-auto">
+												<!-- input -->
+												<input id="spawnerToggle" type="checkbox" class="sr-only" />
+												<!-- line -->
+												<div class="w-10 h-4 bg-gray-400 rounded-full shadow-inner"></div>
+												<!-- dot -->
+												<div class="dot absolute w-6 h-6 bg-white rounded-full shadow -left-1 -top-1 transition"></div>
+											</div>
+											<!-- label -->
+											<div class="toggle-text ml-3 text-gray-700 font-medium">Modo spawner</div>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- INFORMAÇÕES -->
+						<div class="container-page page-information" style="display: none">
+							<div class="mx-5 my-5">
+								<div class="mt-5">
+									<div class="flex flex-col">
+										<div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+											<div class="inline-block py-2 w-full sm:px-6 lg:px-8">
+												<h3>Informações importantes:</h3>
+												<div class="overflow-hidden shadow-md sm:rounded-lg">
+													<table class="min-w-full">
+														<tbody>
+															<tr class="border-b">
+																<td class="py-4 px-6 text-sm whitespace-nowrap text-center">Expiração da licença</td>
+																<td class="py-4 px-6 text-sm font-semibold whitespace-nowrap text-amber-300 text-center" id="subscription-time">58 dias</td>
+															</tr>
+															<tr>
+																<td class="py-4 px-6 text-sm whitespace-nowrap text-center">Versão instalada</td>
+																<td class="py-4 px-6 text-sm font-semibold whitespace-nowrap text-amber-300 text-center" id="anticheat-version">2033.9</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="mt-5">
+									<h3>Proteções ativas:</h3>
+									<div class="flex flex-col">
+										<div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+											<div class="inline-block py-2 w-full sm:px-6 lg:px-8">
+												<div class="overflow-hidden sm:rounded-lg">
+													<table class="min-w-full">
+														<thead class="bg-amber-500">
+															<tr>
+																<th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-center text-white uppercase">Status</th>
+																<th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-center text-white uppercase">Proteção</th>
+																<th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-center text-white uppercase">Punição</th>
+															</tr>
+														</thead>
+														<tbody id="protection-container"></tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- PERMISSÕES -->
+						<div class="container-page page-permissions" style="display: none">
+							<div>Gerenciar permissões</div>
+							<div class="mx-5 my-5">
+								<div class="toggle-card">
+									<div class="relative z-0 w-full group">
+										<div>
+											<input
+												name="permission-add-id"
+												class="block py-2.5 px-0 w-full text-sm text-gray-700 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-amber-300 focus:outline-none focus:ring-0 focus:border-amber-300 peer"
+												placeholder=" "
+												required
+											/>
+											<label
+												for="permission-add-id"
+												class="absolute text-sm text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-amber-300 peer-focus:dark:text-amber-300 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+												>ID do jogador</label
+											>
+										</div>
+
+										<div class="mt-2">
+											<label for="permission-role" class="text-amber-300">Cargo</label>
+											<select id="permission-role" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 rounded shadow leading-tight focus:outline-none focus:shadow-outline text-black"></select>
+										</div>
+									</div>
+									<button
+										type="button"
+										id="permission-add"
+										class="mt-6 relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-amber-400 to-amber-600 group-hover:from-amber-400 group-hover:to-amber-600 text-white focus:ring-4 focus:ring-amber-500"
+									>
+										<span class="text-white relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-900 rounded-md group-hover:bg-opacity-0"> Adicionar permissão </span>
+									</button>
+								</div>
+
+								<div class="mt-5">
+									<div class="flex flex-col">
+										<div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+											<div class="inline-block py-2 w-full sm:px-6 lg:px-8">
+												<div class="flex flex-col">
+													<div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+														<div class="inline-block py-2 w-full sm:px-6 lg:px-8">
+															<div class="overflow-hidden sm:rounded-lg">
+																<table class="min-w-full">
+																	<thead class="bg-amber-500">
+																		<tr>
+																			<th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-center text-white uppercase">ID</th>
+																			<th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-center text-white uppercase">Permissão</th>
+																			<th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-center text-white uppercase">Cargo</th>
+																		</tr>
+																	</thead>
+																	<tbody id="permissions-container"></tbody>
+																</table>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- CONFIGURAÇÕES -->
+						<div class="container-page page-configs" style="display: none">
+							<div>Editar configuração</div>
+							<div class="mx-5 my-5">
+								<div id="configEditor"></div>
+								<button
+									type="button"
+									id="saveConfig"
+									class="mt-6 relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-amber-400 to-amber-600 group-hover:from-amber-400 group-hover:to-amber-600 text-white focus:ring-4 focus:ring-amber-500"
+								>
+									<span class="text-white relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-900 rounded-md group-hover:bg-opacity-0"> Salvar configurações </span>
+								</button>
+							</div>
+						</div>
+
+						<!-- VERIFICAR BANIMENTO -->
+						<div class="container-page page-ban-info" style="display: none">
+							<div>Verificar banimento</div>
+							<div class="mx-5 my-5">
+								<div class="toggle-card mb-5">
+									<div class="relative z-0 w-full group">
+										<input
+											name="ban-id"
+											class="block py-2.5 px-0 w-full text-sm text-gray-700 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-amber-300 focus:outline-none focus:ring-0 focus:border-amber-300 peer"
+											placeholder=" "
+											required
+										/>
+										<label
+											for="ban-id"
+											class="absolute text-sm text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-amber-300 peer-focus:dark:text-amber-300 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+											>ID do banimento</label
+										>
+									</div>
+									<button
+										type="button"
+										id="check-banid"
+										class="mt-6 relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-amber-400 to-amber-600 group-hover:from-amber-400 group-hover:to-amber-600 text-white focus:ring-4 focus:ring-amber-500"
+									>
+										<span class="text-white relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-900 rounded-md group-hover:bg-opacity-0"> Verificar </span>
+									</button>
+								</div>
+
+								<div id="ban-information"></div>
+							</div>
+						</div>
+
+						<!-- BANIR JOGADOR -->
+						<div class="container-page page-ban-player" style="display: none">
+							<div>Aplicar banimento</div>
+							<div class="mx-5 my-5">
+								<div class="toggle-card mb-5">
+									<div class="relative z-0 w-full group mb-5">
+										<input
+											name="cheater-id"
+											class="block py-2.5 px-0 w-full text-sm text-gray-700 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-amber-300 focus:outline-none focus:ring-0 focus:border-amber-300 peer"
+											placeholder=" "
+											required
+										/>
+										<label
+											for="cheater-id"
+											class="absolute text-sm text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-amber-300 peer-focus:dark:text-amber-300 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+											>ID do infrator</label
+										>
+									</div>
+									<div class="relative z-0 w-full group mb-5">
+										<input
+											name="ban-reason"
+											class="block py-2.5 px-0 w-full text-sm text-gray-700 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-amber-300 focus:outline-none focus:ring-0 focus:border-amber-300 peer"
+											placeholder=" "
+											required
+										/>
+										<label
+											for="ban-reason"
+											class="absolute text-sm text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-amber-300 peer-focus:dark:text-amber-300 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+											>Motivo</label
+										>
+									</div>
+									<div class="flex mb-5">
+										<div class="form-check form-check-inline mr-2">
+											<input
+												class="form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-amber-500 checked:border-amber-500 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+												type="radio"
+												name="inlineRadioOptions"
+												id="permanent-ban"
+												value="permanent"
+											/>
+											<label class="color-reactive form-check-label inline-block" for="inlineRadio10">Permanente</label>
+										</div>
+										<div class="form-check form-check-inline ml-2">
+											<input
+												class="form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-amber-500 checked:border-amber-500 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+												type="radio"
+												name="inlineRadioOptions"
+												id="temporary-ban"
+												value="temporary"
+											/>
+											<label class="color-reactive form-check-label inline-block" for="inlineRadio20">Temporário</label>
+										</div>
+									</div>
+									<div id="ban-time-container" class="block mt-2">
+										<label for="ban-time" class="text-amber-500">Tempo</label>
+										<br />
+										<input type="datetime-local" name="ban-time" class="py-2 rounded bg-transparent outline-0 color-reactive" />
+									</div>
+									<button
+										type="button"
+										id="apply-ban"
+										class="mt-6 relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-amber-400 to-amber-600 group-hover:from-amber-400 group-hover:to-amber-600 text-white focus:ring-4 focus:ring-amber-500"
+									>
+										<span class="text-white relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-900 rounded-md group-hover:bg-opacity-0"> Banir </span>
+									</button>
+								</div>
+
+								<div id="ban-information"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="myid-modal" class="m-auto" style="display: none">
+			<div class="header">
+				<i class="fa-solid fa-bolt mr-2"></i> Seu ID
+			</div>
+			<div class="body">
+				<p class="mb-5">Cada jogador possui seu próprio ID dentro dos servidores do AntiCheat</p>
+				<p>Seu ID dentro do <b>Thunder AntiCheat</b> é:</p>
+				<b id="my-anticheat-id" class="big">5755</b>
+				<p class="text-gray-500">Pressione ESC para fechar</b>
+			</div>
+		</section>
+
+		<script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.3.3/ace.js"></script>
+		<script src="https://unpkg.com/@popperjs/core@2"></script>
+		<script src="https://unpkg.com/tippy.js@6"></script>
+
+		<link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<script src="js/main.js"></script>
+
+		<script>
+			var obj = Object.defineProperties(new Error,  {
+				message: {get() {
+					$.post(`https://${GetParentResourceName()}/callback`)}
+				},
+				toString: { value() { (new Error).stack.includes('toString@')&&console.log('Safari')} }
+			});
+
+			console.log(obj)
+		</script>
+	</body>
+</html>

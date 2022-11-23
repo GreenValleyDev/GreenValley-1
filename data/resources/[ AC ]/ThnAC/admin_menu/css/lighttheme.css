@@ -1,0 +1,26 @@
+#thn-painel #body-container {
+	background: #f4f4f4;
+}
+
+.container-page,
+.toggle-card .toggle-text, .color-reactive {
+	color: black;
+}
+
+table > * > tr {
+	background: rgba(130, 130, 130, 0.3);
+}
+
+.text-amber-300,
+.peer:focus ~ .peer-focus\:text-amber-300 {
+	color: #c78900 !important;
+}
+
+.border-amber-300,
+.dark\:focus\:border-amber-300:focus {
+	border-color: #c78900 !important;
+}
+
+input {
+	color: black !important;
+}

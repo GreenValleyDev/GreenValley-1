@@ -1,0 +1,425 @@
+html,
+body {
+	overflow: hidden;
+	/* background-color: black; */
+	background: transparent;
+	/* background-image: url(https://cdn.discordapp.com/attachments/452891038349262849/928554669670793226/unknown.png);  */
+}
+
+#imgserver {
+	top: 15px;
+	right: 0;
+	left: 0;
+	width: 90px;
+	margin: 0 auto 0 auto;
+}
+
+#imgserver img {
+	max-width: 150%;
+	opacity: 0.7;
+}
+
+
+#main-container {
+	right: -200px;
+	bottom: 120px;
+	width: 400px;
+	height: 130px;
+	position: absolute;
+
+}
+
+
+#car-container {
+	right: 20px;
+	bottom: 45px;
+	width: 210px;
+	height: 120px;
+	display: none;
+	border-radius: 10px;
+	position: absolute;
+}
+
+#hour-container {
+	right: 31px;
+	top: 20px;
+	width: auto;
+	height: 50px;
+	border-radius: 10px;
+	position: absolute;
+}
+
+
+.vibaBack {
+	width: 28px;
+	height: 28px;
+	position: relative;
+	border-radius: 100%;
+	border: 5px solid rgba(15, 15, 15, 0.6);
+}
+
+.vidaDisplay {
+	stroke: #c51010;
+	stroke-width: 5;
+	fill: transparent;
+	position: absolute;
+	stroke-dasharray: 100;
+	stroke-dashoffset: 50;
+	
+
+	-webkit-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	transform: rotate(270deg);
+	-webkit-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+
+
+
+	transition: all 2s;
+}
+
+
+.item-contagem {
+	width: 40px;
+	float: left;
+	height: 36px;
+	left: -20px;
+	margin: 4px;
+	border-radius: 15px;
+	position: relative !important;
+	/* background: rgba(15,15,15,.75); */
+	bottom: -17vh;
+}
+
+.coleteback {
+	width: 28px;
+	height: 28px;
+
+	border-radius: 100%;
+	border: 5px solid rgba(15, 15, 15, 0.6);
+}
+
+.coleteDisplay {
+	stroke: #87139c;
+	stroke-width: 5;
+	fill: transparent;
+	position: absolute;
+	stroke-dasharray: 100;
+	stroke-dashoffset: 50;
+
+	-webkit-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	transform: rotate(270deg);
+	-webkit-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+
+
+
+	transition: all 2s;
+}
+
+
+.FomeBack {
+
+	width: 28px;
+	height: 28px;
+
+	border-radius: 100%;
+	border: 5px solid rgba(15, 15, 15, 0.6);
+}
+
+.FomeDisplay {
+	stroke: #ba9311;
+	stroke-width: 5;
+
+	fill: transparent;
+	position: absolute;
+	stroke-dasharray: 100;
+	stroke-dashoffset: 50;
+
+	-webkit-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	transform: rotate(270deg);
+	-webkit-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+
+	transition: all 2s;
+}
+
+.SedeBack {
+
+	width: 28px;
+	height: 28px;
+	border-radius: 100%;
+	border: 5px solid rgba(15, 15, 15, 0.6);
+}
+
+.SedeDisplay {
+	stroke: #1264bc;
+	stroke-width: 5;
+	fill: transparent;
+	position: absolute;
+	stroke-dasharray: 100;
+	stroke-dashoffset: 50;
+
+	-webkit-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	transform: rotate(270deg);
+	-webkit-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+
+	transition: all 2s;
+}
+
+
+.StaminaBack {
+	width: 28px;
+	height: 28px;
+	border-radius: 100%;
+	border: 5px solid rgba(15, 15, 15, 0.6);
+}
+
+.StaminaDisplay {
+	stroke: #239ee0;
+	stroke-width: 5;
+	fill: transparent;
+	position: absolute;
+	stroke-dasharray: 100;
+	stroke-dashoffset: 50;
+
+	-webkit-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	transform: rotate(270deg);
+	-webkit-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+
+	transition: all 2s;
+}
+
+.speeddisplay {
+	font-size: 45px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	margin-top: -10px;
+}
+
+
+
+
+
+
+
+svg {
+	margin-top: -4px;
+	margin-left: -5px;
+	position: absolute;
+}
+
+
+
+.middleIcon {
+	color: #999;
+	width: 28px;
+	height: 22px;
+	padding: 6px 0 0;
+
+	position: absolute;
+	border-radius: 100%;
+	text-align: center;
+	background-size: 90% !important;
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+
+}
+
+
+.ldBar path.mainline {
+	stroke-width: 5;
+	stroke: rgb(59, 142, 214);
+
+	stroke-linecap: round;
+	transition: all 0.2s;
+}
+
+.ldBar path.baseline {
+	stroke-width: 5;
+	stroke: #101314;
+	stroke-linecap: round;
+}
+
+
+.section {
+	width: 50%;
+}
+
+
+
+
+.item-contagem2 {
+	position: relative;
+	display: inline-block;
+}
+
+.middleIcon2 {
+	color: #999;
+	width: 11px;
+	height: 11px;
+	padding: 5px 0 0;
+	padding-left: 4px;
+	position: absolute;
+	border-radius: 100%;
+	text-align: center;
+	font-size: 11px;
+	background-size: 90% !important;
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+}
+
+.speed {
+	color: #fff;
+	font-size: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	letter-spacing: 3px;
+	position: absolute;
+	top: -6%;
+	left: 32.5%;
+	transform: rotate(0deg);
+}
+
+.km {
+	color: #fff;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	letter-spacing: 3px;
+	position: absolute;
+	top: 30%;
+	left: 41.5%;
+	transform: rotate(0deg);
+}
+
+.icons2 {
+	transform: rotate(0deg);
+	color: rgb(233, 129, 10);
+
+	font-size: 12px;
+	position: absolute;
+	top: 60%;
+	left: 73%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+.gasolina {
+	transform: rotate(0deg);
+	color: white;
+	font-size: 10px;
+	position: absolute;
+	top: 60%;
+	left: 60%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+.cinto img {
+	transform: rotate(0deg);
+	width: 20px;
+	position: absolute;
+	top: 29%;
+	left: 69%;
+}
+
+#voice {
+
+	transition: all 0.5s;
+}
+
+.item-voice {
+	min-width: 150px;
+	background: rgb(15, 15, 15, 0.6);
+	border-radius: 30px;
+	padding: 10px;
+	margin-top: 5px;
+	display: inline-block;
+
+	text-align: center;
+
+}
+
+.item-voice .icons {
+	color: #09f;
+	font-size: 15px;
+
+}
+
+.item-hours {
+	min-width: 150px;
+	background: rgb(15, 15, 15, 0.6);
+	border-radius: 30px;
+	padding: 10px;
+	margin-top: 5px;
+	display: inline-block;
+
+	text-align: center;
+
+}
+
+.item-hours .icons {
+	color: #09f;
+	font-size: 15px;
+
+}
+
+.item-ruas {
+	min-width: 250px;
+	background: rgb(15, 15, 15, 0.6);
+	border-radius: 100%;
+	padding: 10px;
+
+	margin-left: 10px;
+	text-align: center;
+
+}
+
+.icons3 {
+	color: rgb(0, 140, 255);
+	font-size: 15px;
+
+}
+
+
+.item-ruastext {
+	color: #fff;
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin-left: 10px;
+	text-align: center;
+	margin-top: 5px;
+}
+
+.item-hourstext {
+	color: #fff;
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin-left: 10px;
+
+}
+
+.item-voicetext {
+	color: #fff;
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin-left: 10px;
+
+}

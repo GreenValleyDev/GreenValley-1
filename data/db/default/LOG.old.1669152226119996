@@ -1,0 +1,277 @@
+2022/11/22-18:22:38.200065 4adc RocksDB version: 6.10.0
+2022/11/22-18:22:38.200138 4adc Git sha rocksdb_build_git_sha:@@GIT_SHA@@
+2022/11/22-18:22:38.200157 4adc Compile date Aug 26 2022
+2022/11/22-18:22:38.200172 4adc DB SUMMARY
+2022/11/22-18:22:38.200773 4adc CURRENT file:  CURRENT
+2022/11/22-18:22:38.200793 4adc IDENTITY file:  IDENTITY
+2022/11/22-18:22:38.200907 4adc MANIFEST file:  MANIFEST-000001 size: 13 Bytes
+2022/11/22-18:22:38.200925 4adc SST files in C:\GrennValley\data\db\default dir, Total Num: 0, files: 
+2022/11/22-18:22:38.200938 4adc Write Ahead Log file in C:\GrennValley\data\db\default: 000003.log size: 372 ; 
+2022/11/22-18:22:38.200950 4adc                         Options.error_if_exists: 0
+2022/11/22-18:22:38.200962 4adc                       Options.create_if_missing: 1
+2022/11/22-18:22:38.201306 4adc                         Options.paranoid_checks: 1
+2022/11/22-18:22:38.201317 4adc                                     Options.env: 000001E075FE27C0
+2022/11/22-18:22:38.201329 4adc                                      Options.fs: Legacy File System
+2022/11/22-18:22:38.201335 4adc                                Options.info_log: 000001E0723440B0
+2022/11/22-18:22:38.201340 4adc                Options.max_file_opening_threads: 16
+2022/11/22-18:22:38.201345 4adc                              Options.statistics: 0000000000000000
+2022/11/22-18:22:38.201350 4adc                               Options.use_fsync: 0
+2022/11/22-18:22:38.201355 4adc                       Options.max_log_file_size: 0
+2022/11/22-18:22:38.201360 4adc                  Options.max_manifest_file_size: 1073741824
+2022/11/22-18:22:38.201366 4adc                   Options.log_file_time_to_roll: 0
+2022/11/22-18:22:38.201370 4adc                       Options.keep_log_file_num: 10
+2022/11/22-18:22:38.201375 4adc                    Options.recycle_log_file_num: 0
+2022/11/22-18:22:38.201380 4adc                         Options.allow_fallocate: 1
+2022/11/22-18:22:38.201385 4adc                        Options.allow_mmap_reads: 0
+2022/11/22-18:22:38.201390 4adc                       Options.allow_mmap_writes: 0
+2022/11/22-18:22:38.201395 4adc                        Options.use_direct_reads: 0
+2022/11/22-18:22:38.201400 4adc                        Options.use_direct_io_for_flush_and_compaction: 0
+2022/11/22-18:22:38.201405 4adc          Options.create_missing_column_families: 0
+2022/11/22-18:22:38.201410 4adc                              Options.db_log_dir: 
+2022/11/22-18:22:38.201415 4adc                                 Options.wal_dir: C:\GrennValley\data\db\default
+2022/11/22-18:22:38.201420 4adc                Options.table_cache_numshardbits: 6
+2022/11/22-18:22:38.201425 4adc                      Options.max_subcompactions: 1
+2022/11/22-18:22:38.201430 4adc                         Options.WAL_ttl_seconds: 0
+2022/11/22-18:22:38.201435 4adc                       Options.WAL_size_limit_MB: 0
+2022/11/22-18:22:38.201440 4adc                        Options.max_write_batch_group_size_bytes: 1048576
+2022/11/22-18:22:38.201452 4adc             Options.manifest_preallocation_size: 4194304
+2022/11/22-18:22:38.201465 4adc                     Options.is_fd_close_on_exec: 1
+2022/11/22-18:22:38.201471 4adc                   Options.advise_random_on_open: 1
+2022/11/22-18:22:38.201477 4adc                    Options.db_write_buffer_size: 0
+2022/11/22-18:22:38.201482 4adc                    Options.write_buffer_manager: 000001E0724D9010
+2022/11/22-18:22:38.201488 4adc         Options.access_hint_on_compaction_start: 1
+2022/11/22-18:22:38.201493 4adc  Options.new_table_reader_for_compaction_inputs: 0
+2022/11/22-18:22:38.201498 4adc           Options.random_access_max_buffer_size: 1048576
+2022/11/22-18:22:38.201503 4adc                      Options.use_adaptive_mutex: 0
+2022/11/22-18:22:38.201522 4adc                            Options.rate_limiter: 0000000000000000
+2022/11/22-18:22:38.201537 4adc     Options.sst_file_manager.rate_bytes_per_sec: 0
+2022/11/22-18:22:38.201546 4adc                       Options.wal_recovery_mode: 2
+2022/11/22-18:22:38.201551 4adc                  Options.enable_thread_tracking: 0
+2022/11/22-18:22:38.201583 4adc                  Options.enable_pipelined_write: 0
+2022/11/22-18:22:38.201591 4adc                  Options.unordered_write: 0
+2022/11/22-18:22:38.201597 4adc         Options.allow_concurrent_memtable_write: 1
+2022/11/22-18:22:38.201602 4adc      Options.enable_write_thread_adaptive_yield: 1
+2022/11/22-18:22:38.201606 4adc             Options.write_thread_max_yield_usec: 100
+2022/11/22-18:22:38.201612 4adc            Options.write_thread_slow_yield_usec: 3
+2022/11/22-18:22:38.201617 4adc                               Options.row_cache: None
+2022/11/22-18:22:38.201621 4adc                              Options.wal_filter: None
+2022/11/22-18:22:38.201627 4adc             Options.avoid_flush_during_recovery: 0
+2022/11/22-18:22:38.201632 4adc             Options.allow_ingest_behind: 0
+2022/11/22-18:22:38.201643 4adc             Options.preserve_deletes: 0
+2022/11/22-18:22:38.201647 4adc             Options.two_write_queues: 0
+2022/11/22-18:22:38.201652 4adc             Options.manual_wal_flush: 0
+2022/11/22-18:22:38.201657 4adc             Options.atomic_flush: 0
+2022/11/22-18:22:38.201662 4adc             Options.avoid_unnecessary_blocking_io: 0
+2022/11/22-18:22:38.201680 4adc                 Options.persist_stats_to_disk: 0
+2022/11/22-18:22:38.201686 4adc                 Options.write_dbid_to_manifest: 0
+2022/11/22-18:22:38.201691 4adc                 Options.log_readahead_size: 0
+2022/11/22-18:22:38.201700 4adc                 Options.file_checksum_gen_factory: Unknown
+2022/11/22-18:22:38.201706 4adc                 Options.best_efforts_recovery: 0
+2022/11/22-18:22:38.201711 4adc             Options.max_background_jobs: 2
+2022/11/22-18:22:38.201716 4adc             Options.max_background_compactions: -1
+2022/11/22-18:22:38.201721 4adc             Options.avoid_flush_during_shutdown: 0
+2022/11/22-18:22:38.201725 4adc           Options.writable_file_max_buffer_size: 1048576
+2022/11/22-18:22:38.201730 4adc             Options.delayed_write_rate : 16777216
+2022/11/22-18:22:38.201736 4adc             Options.max_total_wal_size: 0
+2022/11/22-18:22:38.201740 4adc             Options.delete_obsolete_files_period_micros: 21600000000
+2022/11/22-18:22:38.201746 4adc                   Options.stats_dump_period_sec: 600
+2022/11/22-18:22:38.201751 4adc                 Options.stats_persist_period_sec: 600
+2022/11/22-18:22:38.201768 4adc                 Options.stats_history_buffer_size: 1048576
+2022/11/22-18:22:38.201773 4adc                          Options.max_open_files: -1
+2022/11/22-18:22:38.201777 4adc                          Options.bytes_per_sync: 0
+2022/11/22-18:22:38.201782 4adc                      Options.wal_bytes_per_sync: 0
+2022/11/22-18:22:38.201787 4adc                   Options.strict_bytes_per_sync: 0
+2022/11/22-18:22:38.201792 4adc       Options.compaction_readahead_size: 0
+2022/11/22-18:22:38.201797 4adc                  Options.max_background_flushes: -1
+2022/11/22-18:22:38.201816 4adc Compression algorithms supported:
+2022/11/22-18:22:38.201824 4adc 	kZSTD supported: 0
+2022/11/22-18:22:38.201829 4adc 	kSnappyCompression supported: 0
+2022/11/22-18:22:38.201834 4adc 	kBZip2Compression supported: 0
+2022/11/22-18:22:38.201839 4adc 	kZlibCompression supported: 1
+2022/11/22-18:22:38.201844 4adc 	kLZ4Compression supported: 1
+2022/11/22-18:22:38.201848 4adc 	kXpressCompression supported: 0
+2022/11/22-18:22:38.201853 4adc 	kLZ4HCCompression supported: 1
+2022/11/22-18:22:38.201858 4adc 	kZSTDNotFinalCompression supported: 0
+2022/11/22-18:22:38.201867 4adc Fast CRC32 supported: Not supported on x86
+2022/11/22-18:22:38.203891 4adc [db\version_set.cc:4515] Recovering from manifest file: C:\GrennValley\data\db\default/MANIFEST-000001
+2022/11/22-18:22:38.204105 4adc [db\column_family.cc:579] --------------- Options for column family [default]:
+2022/11/22-18:22:38.204116 4adc               Options.comparator: leveldb.BytewiseComparator
+2022/11/22-18:22:38.204122 4adc           Options.merge_operator: None
+2022/11/22-18:22:38.204126 4adc        Options.compaction_filter: None
+2022/11/22-18:22:38.204168 4adc        Options.compaction_filter_factory: None
+2022/11/22-18:22:38.204176 4adc         Options.memtable_factory: SkipListFactory
+2022/11/22-18:22:38.204181 4adc            Options.table_factory: BlockBasedTable
+2022/11/22-18:22:38.204217 4adc            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (000001E07061ACA0)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 1
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  pin_top_level_index_and_filter: 1
+  index_type: 0
+  data_block_index_type: 0
+  index_shortening: 1
+  data_block_hash_table_util_ratio: 0.750000
+  hash_index_allow_collision: 1
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 000001E0738A4BC0
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 8388608
+    num_shard_bits : 4
+    strict_capacity_limit : 0
+    memory_allocator : None
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: 0000000000000000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: nullptr
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 4
+  enable_index_compression: 1
+  block_align: 0
+2022/11/22-18:22:38.204225 4adc        Options.write_buffer_size: 67108864
+2022/11/22-18:22:38.204230 4adc  Options.max_write_buffer_number: 2
+2022/11/22-18:22:38.204235 4adc          Options.compression: LZ4
+2022/11/22-18:22:38.204239 4adc                  Options.bottommost_compression: Disabled
+2022/11/22-18:22:38.204244 4adc       Options.prefix_extractor: nullptr
+2022/11/22-18:22:38.204249 4adc   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2022/11/22-18:22:38.204254 4adc             Options.num_levels: 7
+2022/11/22-18:22:38.204259 4adc        Options.min_write_buffer_number_to_merge: 1
+2022/11/22-18:22:38.204263 4adc     Options.max_write_buffer_number_to_maintain: 0
+2022/11/22-18:22:38.204268 4adc     Options.max_write_buffer_size_to_maintain: 0
+2022/11/22-18:22:38.204273 4adc            Options.bottommost_compression_opts.window_bits: -14
+2022/11/22-18:22:38.204278 4adc                  Options.bottommost_compression_opts.level: 32767
+2022/11/22-18:22:38.204283 4adc               Options.bottommost_compression_opts.strategy: 0
+2022/11/22-18:22:38.204287 4adc         Options.bottommost_compression_opts.max_dict_bytes: 0
+2022/11/22-18:22:38.204292 4adc         Options.bottommost_compression_opts.zstd_max_train_bytes: 0
+2022/11/22-18:22:38.204297 4adc         Options.bottommost_compression_opts.parallel_threads: 1
+2022/11/22-18:22:38.204302 4adc                  Options.bottommost_compression_opts.enabled: false
+2022/11/22-18:22:38.204306 4adc            Options.compression_opts.window_bits: -14
+2022/11/22-18:22:38.204311 4adc                  Options.compression_opts.level: 32767
+2022/11/22-18:22:38.204316 4adc               Options.compression_opts.strategy: 0
+2022/11/22-18:22:38.204321 4adc         Options.compression_opts.max_dict_bytes: 0
+2022/11/22-18:22:38.204325 4adc         Options.compression_opts.zstd_max_train_bytes: 0
+2022/11/22-18:22:38.204330 4adc         Options.compression_opts.parallel_threads: 1
+2022/11/22-18:22:38.204335 4adc                  Options.compression_opts.enabled: false
+2022/11/22-18:22:38.204339 4adc      Options.level0_file_num_compaction_trigger: 4
+2022/11/22-18:22:38.204344 4adc          Options.level0_slowdown_writes_trigger: 20
+2022/11/22-18:22:38.204349 4adc              Options.level0_stop_writes_trigger: 36
+2022/11/22-18:22:38.204353 4adc                   Options.target_file_size_base: 67108864
+2022/11/22-18:22:38.204358 4adc             Options.target_file_size_multiplier: 1
+2022/11/22-18:22:38.204363 4adc                Options.max_bytes_for_level_base: 268435456
+2022/11/22-18:22:38.204368 4adc Options.level_compaction_dynamic_level_bytes: 0
+2022/11/22-18:22:38.204372 4adc          Options.max_bytes_for_level_multiplier: 10.000000
+2022/11/22-18:22:38.204396 4adc Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2022/11/22-18:22:38.204402 4adc Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2022/11/22-18:22:38.204407 4adc Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2022/11/22-18:22:38.204412 4adc Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2022/11/22-18:22:38.204417 4adc Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2022/11/22-18:22:38.204422 4adc Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2022/11/22-18:22:38.204427 4adc Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2022/11/22-18:22:38.204432 4adc       Options.max_sequential_skip_in_iterations: 8
+2022/11/22-18:22:38.204437 4adc                    Options.max_compaction_bytes: 1677721600
+2022/11/22-18:22:38.204442 4adc                        Options.arena_block_size: 8388608
+2022/11/22-18:22:38.204447 4adc   Options.soft_pending_compaction_bytes_limit: 68719476736
+2022/11/22-18:22:38.204452 4adc   Options.hard_pending_compaction_bytes_limit: 274877906944
+2022/11/22-18:22:38.204457 4adc       Options.rate_limit_delay_max_milliseconds: 100
+2022/11/22-18:22:38.204462 4adc                Options.disable_auto_compactions: 0
+2022/11/22-18:22:38.204468 4adc                        Options.compaction_style: kCompactionStyleLevel
+2022/11/22-18:22:38.204473 4adc                          Options.compaction_pri: kMinOverlappingRatio
+2022/11/22-18:22:38.204479 4adc Options.compaction_options_universal.size_ratio: 1
+2022/11/22-18:22:38.204483 4adc Options.compaction_options_universal.min_merge_width: 2
+2022/11/22-18:22:38.204488 4adc Options.compaction_options_universal.max_merge_width: 4294967295
+2022/11/22-18:22:38.204493 4adc Options.compaction_options_universal.max_size_amplification_percent: 200
+2022/11/22-18:22:38.204498 4adc Options.compaction_options_universal.compression_size_percent: -1
+2022/11/22-18:22:38.204504 4adc Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2022/11/22-18:22:38.204509 4adc Options.compaction_options_fifo.max_table_files_size: 1073741824
+2022/11/22-18:22:38.204514 4adc Options.compaction_options_fifo.allow_compaction: 0
+2022/11/22-18:22:38.204520 4adc                   Options.table_properties_collectors: 
+2022/11/22-18:22:38.204525 4adc                   Options.inplace_update_support: 0
+2022/11/22-18:22:38.204530 4adc                 Options.inplace_update_num_locks: 10000
+2022/11/22-18:22:38.204535 4adc               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2022/11/22-18:22:38.204541 4adc               Options.memtable_whole_key_filtering: 0
+2022/11/22-18:22:38.204546 4adc   Options.memtable_huge_page_size: 0
+2022/11/22-18:22:38.204550 4adc                           Options.bloom_locality: 0
+2022/11/22-18:22:38.204555 4adc                    Options.max_successive_merges: 0
+2022/11/22-18:22:38.204560 4adc                Options.optimize_filters_for_hits: 0
+2022/11/22-18:22:38.204566 4adc                Options.paranoid_file_checks: 0
+2022/11/22-18:22:38.204571 4adc                Options.force_consistency_checks: 0
+2022/11/22-18:22:38.204575 4adc                Options.report_bg_io_stats: 0
+2022/11/22-18:22:38.204581 4adc                               Options.ttl: 2592000
+2022/11/22-18:22:38.204586 4adc          Options.periodic_compaction_seconds: 0
+2022/11/22-18:22:38.226394 4adc [db\version_set.cc:4672] Recovered from manifest file:C:\GrennValley\data\db\default/MANIFEST-000001 succeeded,manifest_file_number is 1, next_file_number is 3, last_sequence is 0, log_number is 0,prev_log_number is 0,max_column_family is 0,min_log_number_to_keep is 0
+2022/11/22-18:22:38.226420 4adc [db\version_set.cc:4681] Column family [default] (ID 0), log number is 0
+2022/11/22-18:22:38.227496 4adc EVENT_LOG_v1 {"time_micros": 1669152158227487, "job": 1, "event": "recovery_started", "log_files": [3]}
+2022/11/22-18:22:38.227515 4adc [db\db_impl\db_impl_open.cc:774] Recovering log #3 mode 2
+2022/11/22-18:22:38.312175 4adc EVENT_LOG_v1 {"time_micros": 1669152158312139, "cf_name": "default", "job": 1, "event": "table_file_creation", "file_number": 4, "file_size": 1150, "table_properties": {"data_size": 374, "index_size": 55, "index_partitions": 0, "top_level_index_size": 0, "index_key_is_user_key": 1, "index_value_is_delta_encoded": 1, "filter_size": 0, "raw_key_size": 45, "raw_average_key_size": 45, "raw_value_size": 312, "raw_average_value_size": 312, "num_data_blocks": 1, "num_entries": 1, "num_deletions": 0, "num_merge_operands": 0, "num_range_deletions": 0, "format_version": 0, "fixed_key_len": 0, "filter_policy": "", "column_family_name": "default", "column_family_id": 0, "comparator": "leveldb.BytewiseComparator", "merge_operator": "nullptr", "prefix_extractor_name": "nullptr", "property_collectors": "[]", "compression": "LZ4", "compression_options": "window_bits=-14; level=32767; strategy=0; max_dict_bytes=0; zstd_max_train_bytes=0; enabled=0; ", "creation_time": 1669152158, "oldest_key_time": 3, "file_creation_time": 0}}
+2022/11/22-18:22:38.312292 4adc [db\version_set.cc:3920] Creating manifest 5
+2022/11/22-18:22:38.415949 4adc EVENT_LOG_v1 {"time_micros": 1669152158415939, "job": 1, "event": "recovery_finished"}
+2022/11/22-18:22:38.418190 4adc [file\delete_scheduler.cc:73] Deleted file C:\GrennValley\data\db\default/000003.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2022/11/22-18:22:38.446467 4adc [db\db_impl\db_impl_open.cc:1576] SstFileManager instance 000001E076131440
+2022/11/22-18:22:38.446977 4adc DB pointer 000001E07657AEE0
+2022/11/22-18:22:38.447737 1ab0 [db\db_impl\db_impl.cc:854] ------- DUMPING STATS -------
+2022/11/22-18:22:38.447760 1ab0 [db\db_impl\db_impl.cc:855] 
+** DB Stats **
+Uptime(secs): 0.2 total, 0.2 interval
+Cumulative writes: 0 writes, 0 keys, 0 commit groups, 0.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 0 writes, 0 syncs, 0.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 0 writes, 0 keys, 0 commit groups, 0.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 0 writes, 0 syncs, 0.00 writes per sync, written: 0.00 MB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  L0      1/0    1.12 KB   0.2      0.0     0.0      0.0       0.0      0.0       0.0   1.0      0.0      0.0      0.08              0.00         1    0.085       0      0
+ Sum      1/0    1.12 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   1.0      0.0      0.0      0.08              0.00         1    0.085       0      0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   1.0      0.0      0.0      0.08              0.00         1    0.085       0      0
+
+** Compaction Stats [default] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+User      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.08              0.00         1    0.085       0      0
+Uptime(secs): 0.2 total, 0.2 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.1 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.1 seconds
+Stalls(count): 0 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_numfiles, 0 level0_numfiles_with_compaction, 0 stop for pending_compaction_bytes, 0 slowdown for pending_compaction_bytes, 0 memtable_compaction, 0 memtable_slowdown, interval 0 total count
+
+** File Read Latency Histogram By Level [default] **
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  L0      1/0    1.12 KB   0.2      0.0     0.0      0.0       0.0      0.0       0.0   1.0      0.0      0.0      0.08              0.00         1    0.085       0      0
+ Sum      1/0    1.12 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   1.0      0.0      0.0      0.08              0.00         1    0.085       0      0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0
+
+** Compaction Stats [default] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+User      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.08              0.00         1    0.085       0      0
+Uptime(secs): 0.2 total, 0.0 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.1 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Stalls(count): 0 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_numfiles, 0 level0_numfiles_with_compaction, 0 stop for pending_compaction_bytes, 0 slowdown for pending_compaction_bytes, 0 memtable_compaction, 0 memtable_slowdown, interval 0 total count
+
+** File Read Latency Histogram By Level [default] **
+2022/11/22-18:22:52.304577 3fa8 [db\db_impl\db_impl.cc:401] Shutdown: canceling all background work
+2022/11/22-18:22:52.321325 3fa8 [db\db_impl\db_impl.cc:577] Shutdown complete

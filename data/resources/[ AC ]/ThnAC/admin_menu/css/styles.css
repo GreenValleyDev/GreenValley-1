@@ -1,0 +1,293 @@
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	display: grid;
+	font-family: "Montserrat", sans-serif !important;
+
+	background: transparent;
+}
+
+*::-webkit-scrollbar {
+	width: 14px;
+}
+
+*::-webkit-scrollbar-track {
+	background: transparent;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: rgba(130, 130, 130, 0.5);
+	border-radius: 10px;
+	border: 3px solid rgba(130, 130, 130, 0);
+}
+
+#thn-painel {
+	min-width: 700px;
+	display: flex;
+	margin: auto auto;
+	border-radius: 20px;
+
+	background: linear-gradient(to right, #c78900, #ffb000);
+}
+
+#sidebar {
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+#left-side,
+#top-navbar,
+#body-container {
+	width: 100%;
+}
+
+.sidebar-header {
+	width: 11.5vw;
+	min-width: 200px;
+
+	display: block;
+
+	font-weight: 600;
+}
+
+.sidebar-header::after {
+	content: "";
+	display: block;
+
+	margin: 10px auto;
+	margin-bottom: 25px;
+	width: 100px;
+	height: 3px;
+	border-radius: 10px;
+
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-link {
+	display: block;
+	color: white;
+	padding: 10px;
+
+	transition: background 0.5s ease;
+	border-radius: 20px;
+}
+
+.sidebar-link:hover,
+.sidebar-link-active {
+	background: rgba(0, 0, 0, 0.2);
+}
+
+#top-navbar {
+	height: 10%;
+	color: white;
+}
+
+#body-container {
+	min-height: 90%;
+	overflow-y: auto;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	transition: all 0.5s ease;
+}
+
+#notify-wrapper {
+	left: 20px;
+	bottom: 30px;
+}
+
+.anticheat-notify {
+	color: white;
+}
+
+.anticheat-notify b {
+	color: #ffb000;
+}
+
+.info-card {
+	border-radius: 10px;
+	padding: 15px 25px;
+	background: rgba(130, 130, 130, 0.3);
+}
+
+@media screen and (max-width: 1200px) {
+	.info-card {
+		width: 230px !important;
+	}
+}
+@media screen and (max-width: 1500px) {
+	.info-card {
+		width: 240px !important;
+	}
+}
+@media screen and (max-width: 1920px) {
+	.info-card {
+		width: 250px !important;
+	}
+}
+
+.icon-holder {
+	margin: auto 0;
+	border-radius: 100%;
+}
+.icon-holder i {
+	font-size: 20px;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	color: white;
+	transform: translate(-1px, 16px);
+}
+
+.info-card h1 {
+	font-feature-settings: "tnum";
+	font-size: 36px;
+	line-height: 36px;
+	height: 70%;
+}
+.info-card h5 {
+	font-size: 13px;
+	line-height: 13px;
+	height: 30%;
+	margin: 0;
+}
+
+#last-logs {
+	height: 45vh;
+	background: rgba(130, 130, 130, 0.3);
+	border-radius: 10px;
+	padding: 20px 30px;
+}
+
+@media screen and (max-width: 1385px) {
+	#last-logs {
+		height: 35vh;
+	}
+}
+
+#last-logs .log b,
+#last-logs .log .log-time {
+	color: #ffb000;
+}
+
+.toggle-card {
+	background: rgba(130, 130, 130, 0.3);
+	border-radius: 10px;
+	padding: 15px 20px;
+}
+
+table > * > tr {
+	background: rgba(130, 130, 130, 0.3);
+}
+
+.toggle-card > * {
+	height: 100%;
+	margin: auto 0;
+}
+
+input[type="text"] {
+	background: transparent;
+	border: 0;
+}
+input[type="text"]:focus {
+	outline: none;
+}
+
+/* Toggle A */
+input:checked ~ .dot {
+	transform: translateX(100%);
+	background-color: #48bb78;
+}
+
+#configEditor {
+	position: relative;
+	height: 100%;
+	min-height: 45vh;
+	border-radius: 10px;
+}
+
+#configEditor #editor {
+	font-family: "Roboto Mono", monospace;
+	font-size: 14px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+#console-server {
+	height: 45vh;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding: 20px 30px;
+}
+
+@media screen and (max-width: 1385px) {
+	#console-server {
+		height: 35vh;
+	}
+}
+
+#console-command {
+	margin-top: 2px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+
+#myid-modal {
+	background: #121212;
+	color: white;
+
+	border-radius: 10px;
+
+	height: 35vh;
+	width: 20vw;
+	min-width: 400px;
+}
+
+#myid-modal .header {
+	background: #ffb000;
+	color: white;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	text-align: center;
+
+	padding: 10px 20px;
+	font-weight: 600;
+	font-size: 25px;
+}
+
+#myid-modal .body {
+	margin: 40px 50px;
+	text-align: center;
+}
+
+#myid-modal b {
+	color: #ffb000;
+}
+
+#myid-modal b.big {
+	font-size: 48px;
+}
+
+.color-square {
+	height: 100px;
+	width: 100px;
+	background: #ffb000;
+
+	border-radius: 10px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+#color-picker {
+	width: fit-content;
+	margin: 0 auto;
+}

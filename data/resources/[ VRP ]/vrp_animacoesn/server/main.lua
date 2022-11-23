@@ -1,0 +1,1 @@
+RegisterNetEvent('ajnasummer:deleteEntity')AddEventHandler('ajnasummer:deleteEntity',function(a)for b,c in pairs(a)do local d=NetworkGetEntityFromNetworkId(c)if DoesEntityExist(d)then DeleteEntity(d)end end end)

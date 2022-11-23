@@ -1,0 +1,157 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="nui://game/ui/jquery.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Jura:wght@600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">    
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+		<script src="jquery.js"></script>
+	</head>
+	<body>
+		<div id ="imgserver"><img src="https://media.discordapp.net/attachments/1043595937051840634/1044354979726639175/green_valey_logo.png?width=675&height=675"></div>
+
+
+
+		<div id="car-container" style="transform: rotate(0deg);">
+
+	
+			<div class="speed-container" style="margin-left: 5px; margin-top: -40px;">
+				<div id="speedLevel"  data-preset="fan" class="ldBar" data-value="0"></div>
+			</div>
+
+			<div class="speed" id="speed">000</div>
+			<div class="km">km/h</div>
+
+		
+				<i class="fas fa-gas-pump icons2"></i>
+				<div class="gasolina" id="gasolina">70%</div>
+
+				<i class="fas fa-car-crash icons2" style="left: 40%; color: rgb(88, 149, 240);"></i>
+				<div class="gasolina" style="left: 25%; top: 60%;" id="cardurablidade">70%</div>
+
+				<div class="cinto"><img id="off" src="assets/cintooff.png" alt=""></div>
+				<div class="cinto"><img style="display: none;" id="on" src="assets/cintoon.png" alt=""></div>
+
+				<div class="cinto"><img id="lockoff" style="transform: rotate(0deg); width: 12px; left: 23%; top: 29%;" src="assets/lockoff.png" alt=""></div>
+				<div class="cinto"><img style="display: none; transform: rotate(0deg); width: 12px; left: 23%; top: 29%;" id="lockon" src="assets/lockon.png" alt=""></div>
+	
+
+		</div>
+
+
+		<div id="main-container" >
+			
+	
+
+			
+
+			
+				<div class="item-contagem">
+					<div class="vibaBack" >
+						<div class="middleIcon"><i style="color: #c7bfbf; padding: 1px 0 0;" class="fas fa-heart"></i></div>
+
+						<svg height="37px" width="37px">
+							<circle class="vidaDisplay" cx="19" cy="19" r="16"/>
+						</svg>
+					</div>
+				</div>
+				<div class="item-contagem">
+					<div class="coleteback" >
+						<div class="middleIcon"><i style="color: #c7bfbf;;" class="fas fa-shield-alt"></i></div>
+
+						<svg height="37px" width="37px">
+							<circle class="coleteDisplay" cx="19" cy="19" r="16"/>
+						</svg>
+					</div>
+				</div>
+				<div class="item-contagem">
+					<div class="FomeBack">
+						<div class="middleIcon"><i style="color: #c7bfbf;" class="far fa-drumstick"></i></div>
+				
+
+						<svg height="37px" width="37px" style="">
+							<circle class="FomeDisplay" cx="19" cy="19" r="16"/>
+						</svg>
+					</div>
+				</div>
+
+				<div class="item-contagem">
+					<div class="SedeBack">
+						<div class="middleIcon"><i style="color: #c7bfbf;" class="far fa-wine-bottle"></i></div>
+
+						<svg height="37px" width="37px">
+							<circle class="SedeDisplay" cx="19" cy="19" r="16"/>
+						</svg>
+					</div>
+				</div>
+
+			
+		</div>
+
+		<div id="hour-container">
+			<div class="item-hours" id="item-ruas" style="margin-left: 10px;">
+			 <i class="far fa-map-marker-alt icons3"><span class="item-ruastext" id="ruas">Rua</span></i>
+		 </div>
+		 <div class="item-hours" style="min-width: 100px;">
+			<i class="far fa-clock icons3"><span class="item-ruastext" id="horas">Rua</span></i>
+		</div>
+		<div class="item-voice" style="min-width: 100px;">
+			<i class="fa fa-microphone icons3"><span class="item-ruastext" id="voice">Normal</span></i>
+		</div> 
+	
+		
+	 </div>
+
+
+			<div class="promocao">
+				<!-- <span>RESTAM APENAS 🕐 <b id="dia"></b> Dias <b id="hora"></b>:<b id="minuto"></b>:<b id="segundo"></b> PARA O FIM DA PROMOÇÃO. CUPOM: <b style = "color: red ">COMPLEXO50</b></span> -->
+			<span>CUPOM LIMITADO: <b style = "color: #136b09 ">GV20</b></span>
+			</div>
+
+			<div class="crime" style = "display: none;">
+				<span><b style = "color: red;">ASSALTOS LIBERADO!</b></span>
+			</div>
+			
+			<header>
+
+		<script src="loading-bar.js"></script>
+
+	
+
+	</body>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Permanent+Marker&family=Prompt:ital,wght@1,900&family=Roboto+Condensed:wght@700&family=Secular+One&display=swap');
+		  .promocao {
+			  position: absolute;
+			  background: linear-gradient(90deg, rgba(0, 255, 43, 0.34) 0%, rgba(0, 41, 10, 0.37) 100%);
+			  padding: 17px;
+			  width: 16em;
+			  text-align: center;
+			  left: 4px;
+			  top: 37%;
+		  }
+  
+		  .promocao span {
+			  color: #fff;
+			  font-family: 'Roboto Condensed', sans-serif;
+		  }
+  
+		  .crime {
+			  position: relative;
+			  padding: 17px;
+			  width: 12em;
+			  left: 90%;
+			  bottom: -92%;
+		  }
+  
+		  .crime span {
+			  color: #fff;
+			  font-family: 'Roboto Condensed', sans-serif;
+		  }
+	  </style>
+</html>

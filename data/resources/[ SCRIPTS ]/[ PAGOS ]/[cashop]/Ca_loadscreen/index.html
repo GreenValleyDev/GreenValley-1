@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>#Ca_LoadScreen</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <audio preload="true" hidden autoplay controls loop id="music">
+		<source src="http://102.165.46.151/loadscreen/musica.mp3" type="audio/mp3">
+	</audio>
+    <video autoplay muted loop id="myVideo">
+        <source src="https://aliferoleplay.com/assets/loadscreen/video.mp4" type="video/mp4">
+    </video>
+    <div class="imgbg"></div>
+    <div class="img">
+        <img src="logo.png" alt="Logo">
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        setTimeout(function() {
+            $(".img").fadeOut();
+        }, 10000);
+
+        setTimeout(function() {
+            $(".img").css("margin", "initial");
+            $(".img").css("left", "initial");
+            $(".img").width("20%");
+            $(".img").fadeIn();
+        }, 12000);
+
+        const animateLogo = () => {
+            setTimeout(() => {
+                $(".img img").removeClass("img-animation");
+            }, 1000);
+            setTimeout(() => {
+                $(".img img").addClass("img-animation");
+                animateLogo();
+            }, 20000);
+        }
+
+        animateLogo();
+
+        var music = document.getElementById("music");
+        var video = document.getElementById("myVideo");
+        music.volume = 0.1;
+        document.addEventListener("keypress", (event) => {
+            if (event.key == "p") {
+                if (music.paused) {
+                    music.play();
+                } else {
+                    music.pause();
+                }
+            }
+
+            if (event.key == "k") {
+                if (video.paused) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
