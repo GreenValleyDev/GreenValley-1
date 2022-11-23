@@ -11,8 +11,8 @@ cfg.db = {
 	driver = "oxmysql",
 	host = "localhost",
 	database = "greenvalley",
-	user = "greenvalley",
-	password = "greenvalley"
+	user = "root",
+	password = ""
 }
 
 cfg.default_customization = {
